@@ -1,7 +1,7 @@
 # GoTRouteFinder
 Route Finding application for Westeros and Essos
 
-Group project by Hubert Stefański and Niall Jordan
+Group project by Hubert Stefański, Niall Jordan and Oliver Baverstock
 
 Key features to be implemented:
 -Custom graph Data structure
