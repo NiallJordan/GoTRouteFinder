@@ -2,12 +2,8 @@ package graph;
 
 import java.util.List;
 
-/**
- * A node.
- * 
- * @author aidenkeating
- *
- */
+
+ 
 public interface Node<N extends Node<N, E>, E extends Edge<N, E>> {
 	/**
 	 * Get nodes that this node has edges to.
