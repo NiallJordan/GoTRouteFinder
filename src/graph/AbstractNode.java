@@ -3,9 +3,40 @@ package graph;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlID;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public abstract class AbstractNode<N extends Node<N, E>, E extends Edge<N, E>> implements Node<N, E> {
-	private final String name;
-	private final List<E> edges;
+
+	@XmlID
+	@XmlAttribute
+	private String name;
+	@XmlElementWrapper(name = "nodeEdges")
+	@XmlElement(name = "nodeEdge", required = true)
+	private List<E> edges;
+
+	public AbstractNode() {
+
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setEdges(List<E> edges) {
+		this.edges = edges;
+	}
 
 	public AbstractNode(final String name) {
 		this.name = name;

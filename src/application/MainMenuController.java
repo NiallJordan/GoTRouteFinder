@@ -10,6 +10,7 @@ import java.net.URL;
 
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
+import javax.xml.bind.JAXBException;
 
 import javafx.application.Platform;
 import javafx.embed.swing.SwingFXUtils;
@@ -41,11 +42,11 @@ public class MainMenuController {
 	@FXML
 	Menu settingsMenu, systemMenu;
 	@FXML
-	MenuItem refreshMenuItem, exitMenuItem, aboutMenuItem, stopMusicMenuItem;
+	MenuItem refreshMenuItem, exitMenuItem, aboutMenuItem, stopMusicMenuItem, overlayGraphMenuItem;
 	@FXML
 	ImageView backgroundImageView;
 	@FXML
-	ImageView mapImageView;
+	static ImageView mapImageView;
 	@FXML
 	Button findRoutesButton;
 	@FXML
@@ -56,6 +57,12 @@ public class MainMenuController {
 
 	@FXML
 	public void initialize() {
+//		try {
+//			JAXBMarshalling.loadMapGraph("resources/GoTGraph.xml");
+//		} catch (JAXBException e1) {
+//			// TODO Auto-generated catch block
+//			e1.printStackTrace();
+//		}
 		System.out.println("init");
 		URL mapUrl = getClass().getResource("GoTMap.png");
 		mapFile = new File(mapUrl.getPath());
@@ -67,10 +74,11 @@ public class MainMenuController {
 		// Sets imageView and AnchorPane size to the resolution of the image, that way
 		// regardless of what map is loaded in it will work
 		mapImage = SwingFXUtils.toFXImage(bufferedMapImage, null);
-		imageHeight = mapImage.getHeight();
+
 		imageWidth = mapImage.getWidth();
-		mapImageView.setFitHeight(imageHeight);
+		imageHeight = mapImage.getHeight();
 		mapImageView.setFitWidth(imageWidth);
+		mapImageView.setFitHeight(imageHeight);
 		mapImageAnchorPane.setMinSize(imageWidth, imageHeight);
 		mapImageView.setImage(mapImage);
 		SoundFactory.playSound();
@@ -82,22 +90,47 @@ public class MainMenuController {
 		SoundFactory.stopSound();
 
 	}
+
 	@FXML
 	public void refreshApp(ActionEvent e) {
-		initialize();
+		mapImageView.setImage(mapImage);
+	}
+
+	@FXML
+	public void overlayGraph(ActionEvent e) {
+		BufferedImage bufferedMapImageToConvert = SwingFXUtils.fromFXImage(mapImage, null);
+		GraphOverlayFactory.drawGraphOverImage(bufferedMapImageToConvert);
+
 	}
 
 	@FXML
 	public void showAboutMenu(ActionEvent e) {
 		System.out.println("Showing authorship");
-		JOptionPane.showMessageDialog(null, "This Project has been created for Data And Algorithms 2 Continous assesment \n by: Hubert Stefanski, Niall Jordan and Oliver Baverstock");
+		JOptionPane.showMessageDialog(null,
+				"This Project has been created for Data And Algorithms 2 Continous assessment \n by: \n Hubert Stefanski \n Niall Jordan \n and \n Oliver Baverstock");
 		System.out.println("Authorship shown");
 	}
 
 	@FXML
 	public void exit(ActionEvent e) {
-		System.out.println("Process has been terminated");
+		System.out.println("--------------------Process has been terminated--------------------");
 		Platform.exit();
+	}
+
+	public static double getImageHeight() {
+		return imageHeight;
+	}
+
+	public static void setImageHeight(double imageHeight) {
+		MainMenuController.imageHeight = imageHeight;
+	}
+
+	public static double getImageWidth() {
+		return imageWidth;
+	}
+
+	public static void setImageWidth(double imageWidth) {
+		MainMenuController.imageWidth = imageWidth;
 	}
 
 }

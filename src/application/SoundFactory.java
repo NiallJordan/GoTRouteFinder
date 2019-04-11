@@ -16,7 +16,7 @@ public class SoundFactory {
 							.getAudioInputStream(SoundFactory.class.getResourceAsStream("GoTTheme.wav"));
 					clip.open(inputStream);
 					clip.start();
-					clip.loop(10);
+					clip.loop(0);
 				} catch (Exception e) {
 					System.err.println(e.getMessage());
 				}
