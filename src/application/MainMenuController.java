@@ -10,7 +10,6 @@ import java.net.URL;
 
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
-import javax.xml.bind.JAXBException;
 
 import javafx.application.Platform;
 import javafx.embed.swing.SwingFXUtils;
@@ -23,7 +22,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import xmlhandle.JAXBMarshalling;
+
 
 /*
  * @author Hubert stefanski
@@ -36,6 +35,7 @@ public class MainMenuController {
 	public static Image mapImage;
 	public static double imageHeight;
 	public static double imageWidth;
+	public static ImageView mapImageViewStatic;
 
 	@FXML
 	MenuBar menuBar;
@@ -46,7 +46,7 @@ public class MainMenuController {
 	@FXML
 	ImageView backgroundImageView;
 	@FXML
-	static ImageView mapImageView;
+	ImageView mapImageView;
 	@FXML
 	Button findRoutesButton;
 	@FXML
@@ -63,6 +63,8 @@ public class MainMenuController {
 //			// TODO Auto-generated catch block
 //			e1.printStackTrace();
 //		}
+		mapImageViewStatic=mapImageView;
+		
 		System.out.println("init");
 		URL mapUrl = getClass().getResource("GoTMap.png");
 		mapFile = new File(mapUrl.getPath());

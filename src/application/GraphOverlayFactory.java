@@ -15,7 +15,7 @@ import xmlhandle.JAXBMarshalling;
 public class GraphOverlayFactory {
 	public BufferedImage localBufferedMapImage;
 	public static String loadPath = "resources/GoTGraph.xml";
-	
+
 	public static void drawGraphOverImage(BufferedImage localBufferedMapImage) {
 		localBufferedMapImage = SwingFXUtils.fromFXImage(MainMenuController.mapImage, null);
 		Graphics graphics = localBufferedMapImage.getGraphics();
@@ -29,13 +29,13 @@ public class GraphOverlayFactory {
 			e.printStackTrace();
 		}
 		for (MapPoint point : mapGraph.getNodes()) {
-			graphics.drawRect(point.getxCoord(), point.getyCoord(), 20, 20);
+		//	graphics.drawOval(point.getxCoord()-5,point.getyCoord()-5 , 15, 15);
+			graphics.fillOval(point.getxCoord()-5,point.getyCoord()-5 , 15, 15);
+			graphics.setColor(Color.YELLOW);
 
 		}
-		MainMenuController.mapImageView.setImage(SwingFXUtils.toFXImage(localBufferedMapImage, null));
+		MainMenuController.mapImageViewStatic.setImage(SwingFXUtils.toFXImage(localBufferedMapImage, null));
 		graphics.dispose();
-	
-		
 
 	}
 

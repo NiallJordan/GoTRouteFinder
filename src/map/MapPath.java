@@ -12,6 +12,12 @@ import graph.AbstractEdge;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class MapPath extends AbstractEdge<MapPoint, MapPath> implements Edge<MapPoint, MapPath> {
 
+	@Override
+	public String toString() {
+		return "MapPath [weight()=" + weight() + ", from()=" + from() + ", getFrom()=" + getFrom() + ", getTo()="
+				+ getTo() + ", to()=" + to() + "]";
+	}
+
 	public MapPath() {
 		super();
 	}

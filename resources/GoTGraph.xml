@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <mapGraph>
     <graphNodes>
-      
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Wall">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -39,7 +39,7 @@
             <xCoord>1027</xCoord>
             <yCoord>808</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Bear Island">
             <nodeEdges>
                 <nodeFrom></nodeFrom>
@@ -47,21 +47,21 @@
             <xCoord>636</xCoord>
             <yCoord>645</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Wolfswood">
             <nodeEdges>
             </nodeEdges>
             <xCoord>700</xCoord>
             <yCoord>813</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Grey Cliffs">
             <nodeEdges>
             </nodeEdges>
             <xCoord>1164</xCoord>
             <yCoord>737</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Sea Dragon Point">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -74,7 +74,7 @@
             <xCoord>528</xCoord>
             <yCoord>712</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Winterfell">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -87,7 +87,7 @@
             <xCoord>820</xCoord>
             <yCoord>845</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Mouth of the Broken Branch River">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -100,7 +100,7 @@
             <xCoord>1070</xCoord>
             <yCoord>1005</yCoord>
         </graphNode>
-        
+
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="White Harbor">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -113,7 +113,7 @@
             <xCoord>927</xCoord>
             <yCoord>1047</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Moat Cailin">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -126,7 +126,7 @@
             <xCoord>824</xCoord>
             <yCoord>1094</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Bite">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -139,7 +139,7 @@
             <xCoord>963</xCoord>
             <yCoord>1124</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Cape Kraken">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -152,7 +152,7 @@
             <xCoord>544</xCoord>
             <yCoord>1159</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Sister Islands">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -165,7 +165,7 @@
             <xCoord>997</xCoord>
             <yCoord>1171</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Neck">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -178,7 +178,7 @@
             <xCoord>781</xCoord>
             <yCoord>1219</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Fingers">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -191,7 +191,7 @@
             <xCoord>1111</xCoord>
             <yCoord>1261</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Twins">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -204,7 +204,7 @@
             <xCoord>792</xCoord>
             <yCoord>1320</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Pyke">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -217,7 +217,7 @@
             <xCoord>524</xCoord>
             <yCoord>1416</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Eyrie">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -230,7 +230,7 @@
             <xCoord>1037</xCoord>
             <yCoord>1390</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Gulltown">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -243,7 +243,7 @@
             <xCoord>1209</xCoord>
             <yCoord>1433</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Crag">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -256,7 +256,7 @@
             <xCoord>554</xCoord>
             <yCoord>1512</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Riverrun">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -269,7 +269,7 @@
             <xCoord>750</xCoord>
             <yCoord>1488</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Harrenhal">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -282,7 +282,7 @@
             <xCoord>909</xCoord>
             <yCoord>1536</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Faircastle">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -295,7 +295,7 @@
             <xCoord>498</xCoord>
             <yCoord>1552</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Dragonstone">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -308,7 +308,7 @@
             <xCoord>1171</xCoord>
             <yCoord>1603</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Casterly Rock">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -321,7 +321,7 @@
             <xCoord>517</xCoord>
             <yCoord>1629</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Lannisport">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -334,7 +334,7 @@
             <xCoord>517</xCoord>
             <yCoord>1629</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="King's Landing">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -347,7 +347,7 @@
             <xCoord>517</xCoord>
             <yCoord>1647</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Tarth">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -360,7 +360,7 @@
             <xCoord>1206</xCoord>
             <yCoord>1856</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Storm's End">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -373,7 +373,7 @@
             <xCoord>1126</xCoord>
             <yCoord>1872</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Shield Islands">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -386,7 +386,7 @@
             <xCoord>534</xCoord>
             <yCoord>1900</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Highgarden">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -399,7 +399,7 @@
             <xCoord>632</xCoord>
             <yCoord>1940</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Estermont">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -412,7 +412,7 @@
             <xCoord>1195</xCoord>
             <yCoord>2006</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Oldtown">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -425,7 +425,7 @@
             <xCoord>515</xCoord>
             <yCoord>2076</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Sunspear">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -438,7 +438,7 @@
             <xCoord>1207</xCoord>
             <yCoord>2195</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Brimstone">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -451,7 +451,7 @@
             <xCoord>826</xCoord>
             <yCoord>2194</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Arbor">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -464,7 +464,7 @@
             <xCoord>428</xCoord>
             <yCoord>2218</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Lys">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -477,7 +477,7 @@
             <xCoord>1473</xCoord>
             <yCoord>2201</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Tyrosh">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -490,7 +490,7 @@
             <xCoord>1349</xCoord>
             <yCoord>1993</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Braavos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -503,7 +503,7 @@
             <xCoord>1450</xCoord>
             <yCoord>1258</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Lorath">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -516,7 +516,7 @@
             <xCoord>1649</xCoord>
             <yCoord>1310</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Norvos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -529,7 +529,7 @@
             <xCoord>1723</xCoord>
             <yCoord>1543</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Pentos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -542,7 +542,7 @@
             <xCoord>1461</xCoord>
             <yCoord>1692</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ghoyan Drone">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -555,7 +555,7 @@
             <xCoord>1599</xCoord>
             <yCoord>1661</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ny sar">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -568,7 +568,7 @@
             <xCoord>1746</xCoord>
             <yCoord>1740</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Qohor">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -581,7 +581,7 @@
             <xCoord>1968</xCoord>
             <yCoord>1691</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Sorrows">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -594,7 +594,7 @@
             <xCoord>1795</xCoord>
             <yCoord>1938</yCoord>
         </graphNode>
-        
+
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Myr">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
@@ -607,6 +607,6 @@
             <xCoord>1551</xCoord>
             <yCoord>1957</yCoord>
         </graphNode>  
-      
+
     </graphNodes>
 </mapGraph>
