@@ -9,6 +9,7 @@ import javax.xml.bind.JAXBException;
 import javafx.embed.swing.SwingFXUtils;
 
 import map.MapGraph;
+import map.MapPath;
 import map.MapPoint;
 import xmlhandle.JAXBMarshalling;
 
@@ -29,11 +30,12 @@ public class GraphOverlayFactory {
 			e.printStackTrace();
 		}
 		for (MapPoint point : mapGraph.getNodes()) {
-		//	graphics.drawOval(point.getxCoord()-5,point.getyCoord()-5 , 15, 15);
-			graphics.fillOval(point.getxCoord()-5,point.getyCoord()-5 , 15, 15);
+			graphics.fillOval(point.getxCoord() - 5, point.getyCoord() - 5, 15, 15);
 			graphics.setColor(Color.YELLOW);
+			graphics.drawString(point.getName(), point.getxCoord() + 10, point.getyCoord());
 
 		}
+		for(MapPath mapPath : mapPath.get)
 		MainMenuController.mapImageViewStatic.setImage(SwingFXUtils.toFXImage(localBufferedMapImage, null));
 		graphics.dispose();
 
