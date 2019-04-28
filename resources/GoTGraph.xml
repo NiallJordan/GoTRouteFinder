@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <mapGraph>
     <graphNodes>
-
-        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Wall">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>The Wall</nodeFrom>
-                    <nodeTo>Castle Black</nodeTo>
-                    <weight>20.0</weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>947</xCoord>
-            <yCoord>509</yCoord>
-        </graphNode>
-
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Castle Black">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Castle Black</nodeFrom>
-                    <nodeTo>The Wall</nodeTo>
                     <nodeTo>Dreadfort</nodeTo>
-                    <weight>20.0</weight>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Castle Black</nodeFrom>
+                    <nodeTo>Winterfell</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Castle Black</nodeFrom>
+                    <nodeTo>Bear Island</nodeTo>
+                    <weight>8.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>962</xCoord>
@@ -32,581 +31,1628 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>CastleBlack</nodeTo>
-                    <nodeTo>The Wall</nodeTo>
-                    <weight>20.0</weight>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dreadfort</nodeFrom>
+                    <nodeTo>Winterfell</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dreadfort</nodeFrom>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dreadfort</nodeFrom>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dreadfort</nodeFrom>
+                    <nodeTo>Barrowtown</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dreadfort</nodeFrom>
+                    <nodeTo>Grey Cliffs</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dreadfort</nodeFrom>
+                    <nodeTo>Bear Island</nodeTo>
+                    <weight>8.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1027</xCoord>
             <yCoord>808</yCoord>
         </graphNode>
-
+        
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Bear Island">
             <nodeEdges>
-                <nodeFrom></nodeFrom>
-            </nodeEdges>
+                <nodeEdge>
+                <nodeFrom>Bear Island</nodeFrom>
+                <nodeTo>Castle Black</nodeTo>
+                <weight>8.0</weight>
+                <safety>4.0</safety>
+                </nodeEdge>
+                <nodeEdge>
+                <nodeFrom>Bear Island</nodeFrom>
+                <nodeTo>Winterfell</nodeTo>
+                <weight>7.0</weight>
+                <safety>3.0</safety>
+                </nodeEdge>
+                <nodeEdge>
+                <nodeFrom>Bear Island</nodeFrom>
+                <nodeTo>The Dreadfort</nodeTo>
+                <weight>8.0</weight>
+                <safety>4.0</safety>
+                </nodeEdge>
+                <nodeEdge>
+                <nodeFrom>Bear Island</nodeFrom>
+                <nodeTo>Barrowtown</nodeTo>
+                <weight>9.0</weight>
+                <safety>4.0</safety>
+                </nodeEdge>
+                <nodeEdge>
+                <nodeFrom>Bear Island</nodeFrom>
+                <nodeTo>Moat Cailin</nodeTo>
+                <weight>7.0</weight>
+                <safety>4.0</safety>
+                </nodeEdge>
+                </nodeEdges>
             <xCoord>636</xCoord>
             <yCoord>645</yCoord>
         </graphNode>
-
-        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Wolfswood">
-            <nodeEdges>
-            </nodeEdges>
-            <xCoord>700</xCoord>
-            <yCoord>813</yCoord>
-        </graphNode>
-
+        
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Grey Cliffs">
             <nodeEdges>
+                <nodeEdge>
+                <nodeFrom>Grey Cliffs</nodeFrom>
+                <nodeTo>Castle Black</nodeTo>
+                <weight>2.0</weight>
+                <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge>
+                <nodeFrom>Grey Cliffs</nodeFrom>
+                <nodeTo>The Dreadfort</nodeTo>
+                <weight>2.0</weight>
+                <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge>
+                <nodeFrom>Grey Cliffs</nodeFrom>
+                <nodeTo>Braavos</nodeTo>
+                <weight>9.0</weight>
+                <safety>5.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge>
+                <nodeFrom>Grey Cliffs</nodeFrom>
+                <nodeTo>Bear Island</nodeTo>
+                <weight>9.0</weight>
+                <safety>5.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge>
+                <nodeFrom>Grey Cliffs</nodeFrom>
+                <nodeTo>Winterfell</nodeTo>
+                <weight>4.0</weight>
+                <safety>3.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>1164</xCoord>
             <yCoord>737</yCoord>
         </graphNode>
-
-        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Sea Dragon Point">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Sea Dragon Point</nodeFrom>
-                    <nodeTo>CastleBlack</nodeTo>
-                    <nodeTo>The Wall</nodeTo>
-                    <weight>20.0</weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>528</xCoord>
-            <yCoord>712</yCoord>
-        </graphNode>
-
+        
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Winterfell">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom></nodeFrom>
-                    <nodeTo>Winterfell</nodeTo>
-                    <nodeTo></nodeTo>
-                    <weight></weight>
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>The Dreadfort</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>Castle Black</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>Bear Island</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>Barrowtown</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>Grey Cliffs</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>820</xCoord>
             <yCoord>845</yCoord>
         </graphNode>
 
-        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Mouth of the Broken Branch River">
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Barrowtown">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Mouth of the Broken Branch River</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeFrom>Barrowtown</nodeFrom>
+                    <nodeTo>Winterfell</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Barrowtown</nodeFrom>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Barrowtown</nodeFrom>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Barrowtown</nodeFrom>
+                    <nodeTo>The Dreadfort</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Barrowtown</nodeFrom>
+                    <nodeTo>Bear Island</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Barrowtown</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
-            <xCoord>1070</xCoord>
-            <yCoord>1005</yCoord>
+            <xCoord>670</xCoord>
+            <yCoord>1027</yCoord>
         </graphNode>
-
+        
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="White Harbor">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>White Harbor</nodeFrom>
+                    <nodeTo>The Dreadfort</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>White Harbor</nodeFrom>
+                    <nodeTo>Winterfell</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>White Harbor</nodeFrom>
+                    <nodeTo>The Bite</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>White Harbor</nodeFrom>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>10.0</weight>
+                    <safety>5.0</safety>
+                </nodeEdge>
+                                
             </nodeEdges>
             <xCoord>927</xCoord>
             <yCoord>1047</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Moat Cailin">
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Moat Cailin">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>Barrowtown</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>Winterfell</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>The Bite</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>Cape Kraken</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>The Neck</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>824</xCoord>
             <yCoord>1094</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Bite">
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Bite">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Bite</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Bite</nodeFrom>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Bite</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Bite</nodeFrom>
+                    <nodeTo>The Neck</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Bite</nodeFrom>
+                    <nodeTo>The Dreadfort</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>963</xCoord>
             <yCoord>1124</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Cape Kraken">
+         
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Cape Kraken">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Cape Kraken</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>The Neck</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Cape Kraken</nodeFrom>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Cape Kraken</nodeFrom>
+                    <nodeTo>Barrowtown</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Cape Kraken</nodeFrom>
+                    <nodeTo>Pyke</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Cape Kraken</nodeFrom>
+                    <nodeTo>The Neck</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+               
             </nodeEdges>
             <xCoord>544</xCoord>
             <yCoord>1159</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Sister Islands">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Sister Islands</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>997</xCoord>
-            <yCoord>1171</yCoord>
-        </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Neck">
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Neck">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Neck</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Neck</nodeFrom>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Neck</nodeFrom>
+                    <nodeTo>Pyke</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Neck</nodeFrom>
+                    <nodeTo>The Bite</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Neck</nodeFrom>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Neck</nodeFrom>
+                    <nodeTo>Cape Kraken</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>781</xCoord>
             <yCoord>1219</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Fingers">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>The Fingers</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>1111</xCoord>
-            <yCoord>1261</yCoord>
-        </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Twins">
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Twins">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Twins</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>Pyke</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>The Eyrie</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>792</xCoord>
             <yCoord>1320</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Pyke">
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Pyke">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>FairCastle</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pyke</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pyke</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pyke</nodeFrom>
+                    <nodeTo>Cape Kraken</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pyke</nodeFrom>
+                    <nodeTo>Casterly Rock</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>524</xCoord>
             <yCoord>1416</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Eyrie">
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Eyrie">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Eyrie</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Gulltown</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Eyrie</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Eyrie</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Eyrie</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1037</xCoord>
             <yCoord>1390</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Gulltown">
-            <nodeEdges>
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Gulltown">
+        <nodeEdges>
+               <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Gulltown</nodeFrom>
+                    <nodeTo>The Eyrie</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Gulltown</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Gulltown</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Gulltown</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1209</xCoord>
             <yCoord>1433</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Crag">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>The Crag</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>554</xCoord>
-            <yCoord>1512</yCoord>
-        </graphNode>
-
+    
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Riverrun">
             <nodeEdges>
+              <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>Pyke</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>Faircastle</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>CasterlyRock</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>DragonStone</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>750</xCoord>
             <yCoord>1488</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Harrenhal">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>The Eyrie</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>The Twins</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>Casterly Rock</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>Gulltown</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Harrenhal</nodeFrom>
+                    <nodeTo>Faircastle</nodeTo>                    
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>909</xCoord>
             <yCoord>1536</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Faircastle">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Faircastle</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Pyke</nodeTo>                    
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Faircastle</nodeFrom>
+                    <nodeTo>Casterly Rock</nodeTo>                    
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Faircastle</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>                    
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Faircastle</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>                    
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Faircastle</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>                    
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>498</xCoord>
             <yCoord>1552</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Dragonstone">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Gulltown</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>The Eyrie</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>10.0</weight>
+                    <safety>5.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Storm's End</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Myr</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1171</xCoord>
             <yCoord>1603</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Casterly Rock">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Casterly Rock</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Pyke</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>Faircastle</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>Highgarden</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>517</xCoord>
             <yCoord>1629</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Lannisport">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Pyke</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lannisport</nodeFrom>
+                    <nodeTo>Faircastle</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lannisport</nodeFrom>
+                    <nodeTo>Casterly Rock</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lannisport</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lannisport</nodeFrom>
+                    <nodeTo>Highgarden</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lannisport</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>517</xCoord>
             <yCoord>1629</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="King's Landing">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Storm's End</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Casterly Rock</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo> Dragonstone</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo> Highgarden</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>8.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>517</xCoord>
             <yCoord>1647</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Tarth">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Storm's End</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Tarth</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Tarth</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Tarth</nodeFrom>
+                    <nodeTo> Myr</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Tarth</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Tarth</nodeFrom>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>8.0</weight>
+                    <safety>5.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>1206</xCoord>
             <yCoord>1856</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Storm's End">
             <nodeEdges>
+               <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Storm's End</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Storm's End</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Storm's End</nodeFrom>
+                    <nodeTo>Highgarden</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Storm's End</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Storm's End</nodeFrom>
+                    <nodeTo>Myr</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>1126</xCoord>
             <yCoord>1872</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Shield Islands">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Shield Islands</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>534</xCoord>
-            <yCoord>1900</yCoord>
-        </graphNode>
-
+          
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Highgarden">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Lannisport</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Highgarden</nodeFrom>
+                    <nodeTo>Casterly Rock</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Highgarden</nodeFrom>
+                    <nodeTo>Oldtown</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Highgarden</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Highgarden</nodeFrom>
+                    <nodeTo>Sunspear</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Highgarden</nodeFrom>
+                    <nodeTo>Storm's End</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>632</xCoord>
             <yCoord>1940</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Estermont">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Estermont</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>1195</xCoord>
-            <yCoord>2006</yCoord>
-        </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Oldtown">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Oldtown</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Highgarden</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Oldtown</nodeFrom>
+                    <nodeTo>Sunspear</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                
             </nodeEdges>
             <xCoord>515</xCoord>
             <yCoord>2076</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Sunspear">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Sunspear</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Highgarden</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Sunspear</nodeFrom>
+                    <nodeTo>Oldtown</nodeTo>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Sunspear</nodeFrom>
+                    <nodeTo>Lys</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Sunspear</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Sunspear</nodeFrom>
+                    <nodeTo>Storm's End</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1207</xCoord>
             <yCoord>2195</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Brimstone">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Brimstone</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>826</xCoord>
-            <yCoord>2194</yCoord>
-        </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Arbor">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>The Arbor</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>428</xCoord>
-            <yCoord>2218</yCoord>
-        </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Lys">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Lys</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>1473</xCoord>
-            <yCoord>2201</yCoord>
-        </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Tyrosh">
-            <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Tyrosh</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
-                </nodeEdge>
-            </nodeEdges>
-            <xCoord>1349</xCoord>
-            <yCoord>1993</yCoord>
-        </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Braavos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Lorath</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Norovs</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Gulltown</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Grey Cliffs</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>White Harbor</nodeTo>
+                    <weight>10.0</weight>
+                    <safety>5.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>10.0</weight>
+                    <safety>5.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>8.0</weight>
+                    <safety>5.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1450</xCoord>
             <yCoord>1258</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Lorath">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lorath</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lorath</nodeFrom>
+                    <nodeTo>Norvos</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lorath</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>1649</xCoord>
             <yCoord>1310</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Norvos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Norvos</nodeFrom>
+                    <nodeTo>Lorath</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Norvos</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Norvos</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Norvos</nodeFrom>
+                    <nodeTo>Qohor</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Norvos</nodeFrom>
+                    <nodeTo>Ny Sar</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1723</xCoord>
             <yCoord>1543</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Pentos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pentos</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pentos</nodeFrom>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pentos</nodeFrom>
+                    <nodeTo>Norvos</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pentos</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pentos</nodeFrom>
+                    <nodeTo>King's Landing</nodeTo>
+                    <weight>8.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pentos</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Pentos</nodeFrom>
                     <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1461</xCoord>
             <yCoord>1692</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ghoyan Drone">
             <nodeEdges>
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Braavos</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Ghoyan Drone</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Norvos</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Ny Sar</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Lorath</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Myr</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ghoyan Drohe</nodeFrom>
+                    <nodeTo>Qohor</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1599</xCoord>
             <yCoord>1661</yCoord>
         </graphNode>
-
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ny sar">
+        
+          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ny Sar">
             <nodeEdges>
+              <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Ny sar</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Qohor</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>The Sorrows</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Myr</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Norvos</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1746</xCoord>
             <yCoord>1740</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Qohor">
             <nodeEdges>
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Norvos</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                  <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Qohor</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Ny Sar</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                  <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Qohor</nodeFrom>
+                    <nodeTo>The Sorrows</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1968</xCoord>
             <yCoord>1691</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Sorrows">
             <nodeEdges>
-                <nodeEdge xsi:type="mapPath">
+                  <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Sorrows</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>Qohor</nodeTo>
+                    <weight>5.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                  <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Sorrows</nodeFrom>
+                    <nodeTo>Ny Sar</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Sorrwos</nodeFrom>
+                    <nodeTo>Myr</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1795</xCoord>
             <yCoord>1938</yCoord>
         </graphNode>
-
+        
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Myr">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Myr</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <nodeTo> </nodeTo>
-                    <weight></weight>
+                    <nodeTo>The Sorrows</nodeTo>
+                    <weight>1.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Myr</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Myr</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <weight>3.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Myr</nodeFrom>
+                    <nodeTo>Storm's End</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Myr</nodeFrom>
+                    <nodeTo>Lys</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>4.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>1551</xCoord>
             <yCoord>1957</yCoord>
-        </graphNode>  
+        </graphNode>    
+        
+        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="lys">
+            <nodeEdges>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lys</nodeFrom>
+                    <nodeTo>Sunspear</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Lys</nodeFrom>
+                    <nodeTo>Myr</nodeTo>
+                    <weight>4.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
 
+            </nodeEdges>
+            <xCoord>1471</xCoord>
+            <yCoord>2200</yCoord>
+        </graphNode>    
     </graphNodes>
 </mapGraph>
