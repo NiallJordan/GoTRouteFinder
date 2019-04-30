@@ -9,7 +9,9 @@ import java.io.IOException;
 import java.net.URL;
 
 import javax.imageio.ImageIO;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
 
 import javafx.application.Platform;
@@ -55,8 +57,9 @@ public class MainMenuController {
 	@FXML
 	Button findRoutesButton;
 	@FXML
-	ChoiceBox<String> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox; // rawType to be
-																								// determined
+	ChoiceBox<String> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox; 
+	@FXML
+	ChoiceBox<String>typeOfRouteChoiceBox;
 	@FXML
 	AnchorPane mapImageAnchorPane;
 
@@ -118,8 +121,9 @@ public class MainMenuController {
 	@FXML
 	public void showAboutMenu(ActionEvent e) {
 		System.out.println("Showing authorship");
-		JOptionPane.showMessageDialog(null,
-				"This Project has been created for Data And Algorithms 2 Continous assessment \n by: \n Hubert Stefanski \n Niall Jordan \n and \n Oliver Baverstock");
+		JLabel label= new JLabel("<html><center>This Project has been created for <br> Data And Algorithms 2 Continous Assessment by: <br> Hubert Stefanski, Niall Jordan and Oliver Baverstock");
+		label.setHorizontalAlignment(SwingConstants.CENTER);
+		JOptionPane.showMessageDialog(null, label, "ABOUT", JOptionPane.ERROR_MESSAGE);
 		System.out.println("Authorship shown");
 	}
 

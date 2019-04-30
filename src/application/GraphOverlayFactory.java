@@ -22,7 +22,6 @@ public class GraphOverlayFactory {
 	public static String loadPath = "resources/GoTGraph.xml";
 
 	public static void drawGraphOverImage(BufferedImage localBufferedMapImage) {
-		localBufferedMapImage = SwingFXUtils.fromFXImage(MainMenuController.mapImage, null);
 		Graphics graphics = localBufferedMapImage.getGraphics();
 
 		try {
@@ -31,10 +30,10 @@ public class GraphOverlayFactory {
 				graphics.fillOval(point.getxCoord() - 5, point.getyCoord() - 5, 15, 15);
 				graphics.setColor(Color.YELLOW);
 				graphics.drawString(point.getName(), point.getxCoord() + 10, point.getyCoord());
-//				List<MapPoint> neighbors = point.getNeighbors();
+
 				for (MapPoint point2 : point.getNeighbors()) {
-//					System.out.println("node " +point+ " is connected to "+point2);
-					System.out.println("Overlaying graph");
+					System.out.println("\n Drawing node : " + point.getName() +"\n connected to : " + point2.getName() + point2);
+					System.out.println("--------------------------------------------------------");
 					graphics.drawLine(point.getxCoord(), point.getyCoord(), point2.getxCoord(), point2.getyCoord());
 					graphics.drawString(point2.getName(), point2.getxCoord() + 10, point2.getyCoord());
 
@@ -46,7 +45,6 @@ public class GraphOverlayFactory {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		MainMenuController.mapImageViewStatic.setImage(SwingFXUtils.toFXImage(localBufferedMapImage, null));
 		graphics.dispose();
 	}
 
