@@ -16,13 +16,11 @@ public class MapGraph extends AbstractGraph<MapPoint, MapPath> implements Graph<
 	public MapGraph() {
 		super();
 	}
-	
-	
 
 	public MapGraph(List<MapPoint> nodes) {
 		super(nodes);
 	}
-	
+
 	public List<MapPoint> getNodes() {
 		return super.getNodes();
 	}

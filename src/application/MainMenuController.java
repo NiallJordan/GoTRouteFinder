@@ -10,8 +10,10 @@ import java.net.URL;
 
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
+import javax.xml.bind.JAXBException;
 
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,7 +24,9 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-
+import map.MapGraph;
+import map.MapPoint;
+import xmlhandle.JAXBMarshalling;
 
 /*
  * @author Hubert stefanski
@@ -36,6 +40,7 @@ public class MainMenuController {
 	public static double imageHeight;
 	public static double imageWidth;
 	public static ImageView mapImageViewStatic;
+	public final String loadPath = "resources/GoTGraph.xml";
 
 	@FXML
 	MenuBar menuBar;
@@ -56,15 +61,10 @@ public class MainMenuController {
 	AnchorPane mapImageAnchorPane;
 
 	@FXML
-	public void initialize() {
-//		try {
-//			JAXBMarshalling.loadMapGraph("resources/GoTGraph.xml");
-//		} catch (JAXBException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
-		mapImageViewStatic=mapImageView;
-		
+	public void initialize() throws JAXBException {
+
+		mapImageViewStatic = mapImageView;
+
 		System.out.println("init");
 		URL mapUrl = getClass().getResource("GoTMap.png");
 		mapFile = new File(mapUrl.getPath());
@@ -83,6 +83,14 @@ public class MainMenuController {
 		mapImageView.setFitHeight(imageHeight);
 		mapImageAnchorPane.setMinSize(imageWidth, imageHeight);
 		mapImageView.setImage(mapImage);
+//		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
+//		MapPoint mapPoint = null;
+//
+//		originChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
+//		destinationChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
+//		waypointChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
+//		avoidChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
+
 		SoundFactory.playSound();
 
 	}
@@ -100,8 +108,10 @@ public class MainMenuController {
 
 	@FXML
 	public void overlayGraph(ActionEvent e) {
-		BufferedImage bufferedMapImageToConvert = SwingFXUtils.fromFXImage(mapImage, null);
-		GraphOverlayFactory.drawGraphOverImage(bufferedMapImageToConvert);
+		BufferedImage bufferedMapImageToOverlay = SwingFXUtils.fromFXImage(mapImage, null);
+		GraphOverlayFactory.drawGraphOverImage(bufferedMapImageToOverlay);
+		Image overLayedImage = SwingFXUtils.toFXImage(bufferedMapImageToOverlay, null);
+		mapImageView.setImage(overLayedImage);
 
 	}
 

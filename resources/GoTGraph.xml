@@ -21,6 +21,13 @@
                     <weight>8.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
+                 <nodeEdge xsi:type="mapPath">
+                <nodeFrom>Castle Black</nodeFrom>
+                <nodeTo>Grey Cliffs</nodeTo>
+                <weight>2.0</weight>
+                <safety>1.0</safety>
+                </nodeEdge>
             </nodeEdges>
             <xCoord>962</xCoord>
             <yCoord>531</yCoord>
@@ -30,7 +37,7 @@
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
-                    <nodeTo>CastleBlack</nodeTo>
+                    <nodeTo>Castle Black</nodeTo>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -77,31 +84,31 @@
         
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Bear Island">
             <nodeEdges>
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Castle Black</nodeTo>
                 <weight>8.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Winterfell</nodeTo>
                 <weight>7.0</weight>
                 <safety>3.0</safety>
                 </nodeEdge>
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
-                <nodeTo>The Dreadfort</nodeTo>
+                <nodeTo>Dreadfort</nodeTo>
                 <weight>8.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Barrowtown</nodeTo>
                 <weight>9.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Moat Cailin</nodeTo>
                 <weight>7.0</weight>
@@ -114,35 +121,35 @@
         
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Grey Cliffs">
             <nodeEdges>
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Castle Black</nodeTo>
                 <weight>2.0</weight>
                 <safety>1.0</safety>
                 </nodeEdge>
                 
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
-                <nodeTo>The Dreadfort</nodeTo>
+                <nodeTo>Dreadfort</nodeTo>
                 <weight>2.0</weight>
                 <safety>1.0</safety>
                 </nodeEdge>
                 
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Braavos</nodeTo>
                 <weight>9.0</weight>
                 <safety>5.0</safety>
                 </nodeEdge>
                 
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Bear Island</nodeTo>
                 <weight>9.0</weight>
                 <safety>5.0</safety>
                 </nodeEdge>
                 
-                <nodeEdge>
+                <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Winterfell</nodeTo>
                 <weight>4.0</weight>
@@ -158,7 +165,7 @@
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
-                    <nodeTo>The Dreadfort</nodeTo>
+                    <nodeTo>Dreadfort</nodeTo>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -228,7 +235,7 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
-                    <nodeTo>The Dreadfort</nodeTo>
+                    <nodeTo>Dreadfort</nodeTo>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -262,7 +269,7 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
-                    <nodeTo>The Dreadfort</nodeTo>
+                    <nodeTo>Dreadfort</nodeTo>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -382,7 +389,7 @@
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Bite</nodeFrom>
-                    <nodeTo>The Dreadfort</nodeTo>
+                    <nodeTo>Dreadfort</nodeTo>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -525,7 +532,7 @@
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
-                    <nodeTo>FairCastle</nodeTo>
+                    <nodeTo>Faircastle</nodeTo>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -659,7 +666,7 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
-                    <nodeTo>CasterlyRock</nodeTo>
+                    <nodeTo>Casterly Rock</nodeTo>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -673,7 +680,7 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
-                    <nodeTo>DragonStone</nodeTo>
+                    <nodeTo>Dragonstone</nodeTo>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -996,7 +1003,7 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
-                    <nodeTo> Highgarden</nodeTo>
+                    <nodeTo>Highgarden</nodeTo>
                     <weight>2.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1247,7 +1254,7 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
-                    <nodeTo>Norovs</nodeTo>
+                    <nodeTo>Norvos</nodeTo>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1417,25 +1424,13 @@
                     <safety>4.0</safety>
                 </nodeEdge>
                 
-                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Pentos</nodeFrom>
-                    <nodeTo>Tarth</nodeTo>
-                    <weight>6.0</weight>
-                    <safety>4.0</safety>
-                </nodeEdge>
-                
-                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Pentos</nodeFrom>
-                    <nodeTo></nodeTo>
-                    <weight>5.0</weight>
-                    <safety>3.0</safety>
-                </nodeEdge>
+             
             </nodeEdges>
             <xCoord>1461</xCoord>
             <yCoord>1692</yCoord>
         </graphNode>
         
-          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ghoyan Drone">
+          <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Ghoyan Drohe">
             <nodeEdges>
                  <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
@@ -1574,7 +1569,7 @@
                     <nodeTo>Qohor</nodeTo>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
-                </nodeEdge>
+                  </nodeEdge>
                 
                   <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Sorrows</nodeFrom>
