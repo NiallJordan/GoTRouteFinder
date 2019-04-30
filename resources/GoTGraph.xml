@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <mapGraph>
     <graphNodes>
-        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Castle Black">
+    <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Castle Black">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Castle Black</nodeFrom>
                     <nodeTo>Dreadfort</nodeTo>
+                    <distance>284.5242</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Castle Black</nodeFrom>
                     <nodeTo>Winterfell</nodeTo>
+                    <distance>344.6157</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Castle Black</nodeFrom>
                     <nodeTo>Bear Island</nodeTo>
+                    <distance>345.3578</distance>
                     <weight>8.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -25,6 +28,7 @@
                  <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Castle Black</nodeFrom>
                 <nodeTo>Grey Cliffs</nodeTo>
+                <distance>288.5134</distance>     
                 <weight>2.0</weight>
                 <safety>1.0</safety>
                 </nodeEdge>
@@ -32,48 +36,55 @@
             <xCoord>962</xCoord>
             <yCoord>531</yCoord>
         </graphNode>
-
-        <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Dreadfort">
+        
+    <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Dreadfort">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>Castle Black</nodeTo>
+                    <distance>284.5242</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>Winterfell</nodeTo>
-                    <weight>2.0</weight>
+                    <distance>210.2808</distance>
+                    <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>White Harbor</nodeTo>
+                    <distance>259.0772</distance>
                     <weight>3.0</weight>
-                    <safety>2.0</safety>
+                    <safety>1.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
+                    <distance>350.7207</distance>                    
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>Barrowtown</nodeTo>
+                    <distance>418.8198</distance>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>Grey Cliffs</nodeTo>
+                    <distance>154.3049</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dreadfort</nodeFrom>
                     <nodeTo>Bear Island</nodeTo>
+                    <distance>423.6154</distance>
                     <weight>8.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -87,30 +98,45 @@
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Castle Black</nodeTo>
+                <distance>345.3578</distance>
                 <weight>8.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Winterfell</nodeTo>
+                <distance>271.0885</distance>
                 <weight>7.0</weight>
                 <safety>3.0</safety>
                 </nodeEdge>
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Dreadfort</nodeTo>
+                <distance>423.6154</distance>
                 <weight>8.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                <nodeFrom>Bear Island</nodeFrom>
+                <nodeTo>Grey Cliffs</nodeTo>
+                <distance>535.9552</distance>
+                <weight>9.0</weight>
+                <safety>5.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Barrowtown</nodeTo>
+                <distance>383.4227</distance>
                 <weight>9.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Bear Island</nodeFrom>
                 <nodeTo>Moat Cailin</nodeTo>
+                <distance>486.3846</distance>
                 <weight>7.0</weight>
                 <safety>4.0</safety>
                 </nodeEdge>
@@ -124,6 +150,7 @@
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Castle Black</nodeTo>
+                <distance>288.5134</distance>     
                 <weight>2.0</weight>
                 <safety>1.0</safety>
                 </nodeEdge>
@@ -131,6 +158,7 @@
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Dreadfort</nodeTo>
+                <distance>154.3049</distance>
                 <weight>2.0</weight>
                 <safety>1.0</safety>
                 </nodeEdge>
@@ -138,6 +166,7 @@
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Braavos</nodeTo>
+                <distance>594.3373</distance>
                 <weight>9.0</weight>
                 <safety>5.0</safety>
                 </nodeEdge>
@@ -145,6 +174,7 @@
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Bear Island</nodeTo>
+                <distance>535.9552</distance>
                 <weight>9.0</weight>
                 <safety>5.0</safety>
                 </nodeEdge>
@@ -152,6 +182,7 @@
                 <nodeEdge xsi:type="mapPath">
                 <nodeFrom>Grey Cliffs</nodeFrom>
                 <nodeTo>Winterfell</nodeTo>
+                <distance>360.5551</distance>
                 <weight>4.0</weight>
                 <safety>3.0</safety>
                 </nodeEdge>
@@ -166,6 +197,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
                     <nodeTo>Dreadfort</nodeTo>
+                    <distance>210.2808</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -173,6 +205,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
                     <nodeTo>Castle Black</nodeTo>
+                    <distance>344.6157</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -180,6 +213,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
                     <nodeTo>Bear Island</nodeTo>
+                    <distance>271.0885</distance>
                     <weight>7.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -187,6 +221,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
                     <nodeTo>Barrowtown</nodeTo>
+                    <distance>235.8474</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -194,6 +229,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
                     <nodeTo>White Harbor</nodeTo>
+                    <distance>288.5892</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -201,8 +237,17 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Winterfell</nodeFrom>
                     <nodeTo>Grey Cliffs</nodeTo>
+                    <distance>360.5551</distance>
                     <weight>4.0</weight>
-                    <safety>2.0</safety>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Winterfell</nodeFrom>
+                    <nodeTo>Moat Cailin</nodeTo>
+                    <distance>249.0321</distance>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
                 
             </nodeEdges>
@@ -215,6 +260,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
                     <nodeTo>Winterfell</nodeTo>
+                    <distance>235.8474</distance>
                     <weight>2.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -222,6 +268,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
+                    <distance>167.9434</distance>
                     <weight>2.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -229,6 +276,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
                     <nodeTo>White Harbor</nodeTo>
+                    <distance>257.777</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -236,6 +284,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
                     <nodeTo>Dreadfort</nodeTo>
+                    <distance>418.8198</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -243,6 +292,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
                     <nodeTo>Bear Island</nodeTo>
+                    <distance>383.4227</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -250,6 +300,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Barrowtown</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>317.3836</distance>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -260,16 +311,27 @@
         
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="White Harbor">
             <nodeEdges>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>White Harbor</nodeFrom>
+                    <nodeTo>Barrowtown</nodeTo>
+                    <distance>257.777</distance>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
-                    <weight>1.0</weight>
+                    <distance>113.2166</distance>
+                    <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
                     <nodeTo>Dreadfort</nodeTo>
+                    <distance>259.0772</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -277,6 +339,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
                     <nodeTo>Winterfell</nodeTo>
+                    <distance>288.5892</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -284,6 +347,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
                     <nodeTo>The Bite</nodeTo>
+                    <distance>85.0</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -291,6 +355,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>White Harbor</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>563.9592</distance>
                     <weight>10.0</weight>
                     <safety>5.0</safety>
                 </nodeEdge>
@@ -305,6 +370,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>White Harbor</nodeTo>
+                    <distance>113.2166</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -312,7 +378,17 @@
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>Dreadfort</nodeTo>
+                    <distance>350.7207</distance>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>Barrowtown</nodeTo>
+                    <distance>167.9434</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -321,6 +397,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>Winterfell</nodeTo>
+                    <distance>249.0321</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -329,14 +406,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>The Bite</nodeTo>
+                    <distance>142.2006</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
                 
-                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>228.2542</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -344,6 +422,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>Cape Kraken</nodeTo>
+                    <distance>287.4456</distance>
                     <weight>4.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -351,9 +430,19 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Moat Cailin</nodeFrom>
                     <nodeTo>The Neck</nodeTo>
+                    <distance>132.1893</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Moat Cailin</nodeFrom>
+                    <nodeTo>Bear Island</nodeTo>
+                    <distance>486.3846</distance>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>824</xCoord>
             <yCoord>1094</yCoord>
@@ -364,6 +453,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Bite</nodeFrom>
                     <nodeTo>White Harbor</nodeTo>
+                    <distance>85.0</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -371,6 +461,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Bite</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
+                    <distance>142.2006</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -378,20 +469,17 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Bite</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>260.1096</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Bite</nodeFrom>
                     <nodeTo>The Neck</nodeTo>
+                    <distance>205.3022</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
-                </nodeEdge>
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>The Bite</nodeFrom>
-                    <nodeTo>Dreadfort</nodeTo>
-                    <weight>5.0</weight>
-                    <safety>3.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>963</xCoord>
@@ -403,6 +491,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Cape Kraken</nodeFrom>
                     <nodeTo>The Neck</nodeTo>
+                    <distance>244.477</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -410,29 +499,17 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Cape Kraken</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
+                    <distance>287.4456</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Cape Kraken</nodeFrom>
-                    <nodeTo>Barrowtown</nodeTo>
-                    <weight>5.0</weight>
-                    <safety>4.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Cape Kraken</nodeFrom>
                     <nodeTo>Pyke</nodeTo>
-                    <weight>4.0</weight>
+                    <distance>257.777</distance>
+                    <weight>6.0</weight>
                     <safety>3.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Cape Kraken</nodeFrom>
-                    <nodeTo>The Neck</nodeTo>
-                    <weight>2.0</weight>
-                    <safety>1.0</safety>
                 </nodeEdge>
                
             </nodeEdges>
@@ -452,6 +529,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Neck</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
+                    <distance>132.1893</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -466,6 +544,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Neck</nodeFrom>
                     <nodeTo>The Bite</nodeTo>
+                    <distance>205.3022</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -480,6 +559,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Neck</nodeFrom>
                     <nodeTo>Cape Kraken</nodeTo>
+                    <distance>244.477</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -491,28 +571,51 @@
         
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="The Twins">
             <nodeEdges>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>Barrowtown</nodeTo>
+                    <distance>317.3836</distance>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Twins</nodeFrom>
                     <nodeTo>Moat Cailin</nodeTo>
+                    <distance>228.2542</distance>
                     <weight>2.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>The Bite</nodeTo>
+                    <distance>260.1096</distance>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
                     <nodeTo>Pyke</nodeTo>
+                    <distance>284.6753</distance>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Twins</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
-                    <weight>2.0</weight>
-                    <safety>1.0</safety>
+                    <distance>173.1704</distance>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Twins</nodeFrom>
                     <nodeTo>Harrenhal</nodeTo>
+                    <distance>245.6522</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -520,9 +623,19 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Twins</nodeFrom>
                     <nodeTo>The Eyrie</nodeTo>
-                    <weight>6.0</weight>
+                    <distance>254.8038</distance>
+                    <weight>5.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
+                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Twins</nodeFrom>
+                    <nodeTo>Gulltown</nodeTo>
+                    <distance>432.0394</distance>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>792</xCoord>
             <yCoord>1320</yCoord>
@@ -533,6 +646,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
                     <nodeTo>Faircastle</nodeTo>
+                    <distance>138.463</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -540,13 +654,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
-                    <weight>7.0</weight>
-                    <safety>2.0</safety>
+                    <distance>284.6753</distance>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
+                    <distance>237.1919</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -554,6 +670,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
                     <nodeTo>Cape Kraken</nodeTo>
+                    <distance>257.777</distance>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -561,6 +678,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pyke</nodeFrom>
                     <nodeTo>Casterly Rock</nodeTo>
+                    <distance>213.115</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -574,27 +692,43 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Eyrie</nodeFrom>
                     <nodeTo>Gulltown</nodeTo>
+                    <distance>177.2935</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Eyrie</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>254.8038</distance>
                     <weight>5.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Eyrie</nodeFrom>
                     <nodeTo>Harrenhal</nodeTo>
+                    <distance>194.1649</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Eyrie</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
+                    <distance>303.2705</distance>
                     <weight>7.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>The Eyrie</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <distance>251.6446</distance>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>1037</xCoord>
             <yCoord>1390</yCoord>
@@ -605,6 +739,7 @@
                <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Gulltown</nodeFrom>
                     <nodeTo>The Eyrie</nodeTo>
+                    <distance>177.2935</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -612,6 +747,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Gulltown</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>298.8355</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -619,6 +755,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Gulltown</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                    <distance>174.1953</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -626,6 +763,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Gulltown</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>432.0394</distance>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+            
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>GulltownHarrenhal</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <distance>317.1892</distance>
                     <weight>7.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -636,9 +782,19 @@
     
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Riverrun">
             <nodeEdges>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Riverrun</nodeFrom>
+                    <nodeTo>The Eyrie</nodeTo>
+                    <distance>303.2705</distance>
+                    <weight>7.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
               <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>Harrenhal</nodeTo>
+                    <distance>166.0873</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -646,6 +802,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>173.1704</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -653,6 +810,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>Pyke</nodeTo>
+                    <distance>138.463</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -660,6 +818,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>Faircastle</nodeTo>
+                    <distance>260.0</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -667,6 +826,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>Casterly Rock</nodeTo>
+                    <distance>272.3417</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -674,6 +834,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>Lannisport</nodeTo>
+                    <distance>282.0815</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -681,6 +842,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                    <distance>436.4241</distance>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -688,6 +850,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Riverrun</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>317.5547</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -701,6 +864,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
+                    <distance>166.0873</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -708,6 +872,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>The Eyrie</nodeTo>
+                    <distance>194.1649</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -715,6 +880,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>The Twins</nodeTo>
+                    <distance>245.6522</distance>
                     <weight>2.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -722,6 +888,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>Casterly Rock</nodeTo>
+                    <distance>402.8809</distance>
                     <weight>7.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -729,6 +896,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>Lannisport</nodeTo>
+                    <distance>407.4126</distance>
                     <weight>7.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -736,6 +904,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                    <distance>270.4311</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -743,6 +912,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>185.6987</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -750,13 +920,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
                     <nodeTo>Gulltown</nodeTo>
+                    <distance>317.1892</distance>
                     <weight>7.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Harrenhal</nodeFrom>
-                    <nodeTo>Faircastle</nodeTo>                    
+                    <nodeTo>Faircastle</nodeTo> 
+                    <distance>411,3113</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -769,28 +941,32 @@
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Faircastle</nodeFrom>
-                    <nodeTo>Pyke</nodeTo>                    
+                    <nodeTo>Pyke</nodeTo> 
+                    <distance>138.463</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Faircastle</nodeFrom>
-                    <nodeTo>Casterly Rock</nodeTo>                    
+                    <nodeTo>Casterly Rock</nodeTo>  
+                    <distance>79.3095</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Faircastle</nodeFrom>
-                    <nodeTo>Lannisport</nodeTo>                    
+                    <nodeTo>Lannisport</nodeTo>
+                    <distance>96.8814</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Faircastle</nodeFrom>
-                    <nodeTo>Riverrun</nodeTo>                    
+                    <nodeTo>Riverrun</nodeTo>  
+                    <distance>260.0</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -798,6 +974,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Faircastle</nodeFrom>
                     <nodeTo>Harrenhal</nodeTo>                    
+                    <distance>411,3113</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -811,6 +988,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Gulltown</nodeTo>
+                    <distance>174.1953</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -818,6 +996,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>The Eyrie</nodeTo>
+                    <distance>251.6446</distance>
+                    <weight>6.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Dragonstone</nodeFrom>
+                    <nodeTo>Riverrun</nodeTo>
+                    <distance>436.4241</distance>
                     <weight>6.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -825,6 +1012,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Harrenhal</nodeTo>
+                    <distance>270.4311</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -832,6 +1020,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Pentos</nodeTo>
+                    <distance>303.3496</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -839,6 +1028,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>443.6958</distance>
                     <weight>10.0</weight>
                     <safety>5.0</safety>
                 </nodeEdge>
@@ -846,6 +1036,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>218.8356</distance>
                     <weight>3.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -853,6 +1044,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Tarth</nodeTo>
+                    <distance>255.4095</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -860,6 +1052,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Storm's End</nodeTo>
+                    <distance>272.738</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -867,6 +1060,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Dragonstone</nodeFrom>
                     <nodeTo>Myr</nodeTo>
+                    <distance>519.3419</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -880,6 +1074,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Casterly Rock</nodeFrom>
                     <nodeTo>Pyke</nodeTo>
+                    <distance>213.115</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -887,27 +1082,39 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Casterly Rock</nodeFrom>
                     <nodeTo>Faircastle</nodeTo>
+                    <distance>79.3095</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Casterly Rock</nodeFrom>
-                    <nodeTo>Lannisport</nodeTo>
-                    <weight>1.0</weight>
-                    <safety>1.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Casterly Rock</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
+                    <distance>272.3417</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <distance>402.8809</distance>
+                    <weight>7.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>
+                    <distance>18.0</distance>
+                    <weight>1.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>  
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Casterly Rock</nodeFrom>
                     <nodeTo>Highgarden</nodeTo>
+                    <distance>331.5811</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -915,6 +1122,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Casterly Rock</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>468.7057</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -927,14 +1135,16 @@
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
-                    <nodeTo>Pyke</nodeTo>
-                    <weight>5.0</weight>
-                    <safety>2.0</safety>
+                    <nodeTo>Harrenhal</nodeTo>
+                    <distance>407.4126</distance>
+                    <weight>7.0</weight>
+                    <safety>3.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
                     <nodeTo>Faircastle</nodeTo>
+                    <distance>96.8814</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -942,6 +1152,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
                     <nodeTo>Casterly Rock</nodeTo>
+                    <distance>18.0</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -949,6 +1160,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
+                    <distance>282.0815</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -956,6 +1168,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
                     <nodeTo>Highgarden</nodeTo>
+                    <distance>314.7602</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -963,33 +1176,21 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lannisport</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>466.0097</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>517</xCoord>
-            <yCoord>1629</yCoord>
+            <yCoord>1647</yCoord>
         </graphNode>
         
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="King's Landing">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
-                    <nodeTo>Storm's End</nodeTo>
-                    <weight>2.0</weight>
-                    <safety>1.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>King's Landing</nodeFrom>
-                    <nodeTo>Lannisport</nodeTo>
-                    <weight>3.0</weight>
-                    <safety>1.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo>Casterly Rock</nodeTo>
+                    <distance>468.7057</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -997,13 +1198,31 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo> Dragonstone</nodeTo>
+                    <distance>218.8356</distance>
                     <weight>3.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Lannisport</nodeTo>
+                    <distance>466.0097</distance>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
+                    <nodeTo>Storm's End</nodeTo>
+                    <distance>220.2385</distance>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo>Highgarden</nodeTo>
+                    <distance>417.4123</distance>
                     <weight>2.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1011,6 +1230,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo>Harrenhal</nodeTo>
+                    <distance>185.6987</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1018,6 +1238,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo>Riverrun</nodeTo>
+                    <distance>317.5547</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1025,13 +1246,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo>Tarth</nodeTo>
-                    <weight>4.0</weight>
-                    <safety>2.0</safety>
+                     <distance>270.9852</distance>
+                    <weight>3.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>King's Landing</nodeFrom>
                     <nodeTo>Pentos</nodeTo>
+                    <distance>482.2655</distance>
                     <weight>8.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1045,6 +1268,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
                     <nodeTo>Storm's End</nodeTo>
+                    <distance>81.5843</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1052,6 +1276,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>270.9852</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1059,6 +1284,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
                     <nodeTo>Pentos</nodeTo>
+                    <distance>81.5843</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1066,6 +1292,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
                     <nodeTo> Myr</nodeTo>
+                    <distance>359.4802</distance>
                     <weight>3.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1073,6 +1300,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                    <distance>255.4095</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1080,10 +1308,18 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Tarth</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>645.8638</distance>
                     <weight>8.0</weight>
                     <safety>5.0</safety>
                 </nodeEdge>
                 
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Tarth</nodeFrom>
+                    <nodeTo>Sunspear</nodeTo>
+                    <distance>229.0015</distance>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
             </nodeEdges>
             <xCoord>1206</xCoord>
             <yCoord>1856</yCoord>
@@ -1091,9 +1327,18 @@
         
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Storm's End">
             <nodeEdges>
-               <nodeEdge xsi:type="mapPath">
+                <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Storm's End</nodeFrom>
+                    <nodeTo>Dragonstone</nodeTo>
+                    <distance>272.738</distance>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+               <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Storm's End</nodeFrom>            
                     <nodeTo>Tarth</nodeTo>
+                    <distance>81.5843</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1101,31 +1346,34 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Storm's End</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>220.2385</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Storm's End</nodeFrom>
-                    <nodeTo>Highgarden</nodeTo>
+                    <nodeTo>Myr</nodeTo>
+                    <distance>433.4167</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Storm's End</nodeFrom>
-                    <nodeTo>Dragonstone</nodeTo>
+                    <nodeTo>Highgarden</nodeTo>
+                    <distance>498.6582</distance>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Storm's End</nodeFrom>
+                    <nodeTo>Sunspear</nodeTo>
+                    <distance>333.0015</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Storm's End</nodeFrom>
-                    <nodeTo>Myr</nodeTo>
-                    <weight>4.0</weight>
-                    <safety>3.0</safety>
-                </nodeEdge>
-                
             </nodeEdges>
             <xCoord>1126</xCoord>
             <yCoord>1872</yCoord>
@@ -1136,6 +1384,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
                     <nodeTo>Lannisport</nodeTo>
+                    <distance>314.7602</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1143,6 +1392,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
                     <nodeTo>Casterly Rock</nodeTo>
+                    <distance>331.5811</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1150,6 +1400,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
                     <nodeTo>Oldtown</nodeTo>
+                    <distance>179.4018</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1157,6 +1408,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>417.4123</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1164,6 +1416,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
                     <nodeTo>Sunspear</nodeTo>
+                    <distance>629.0072</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1171,6 +1424,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Highgarden</nodeFrom>
                     <nodeTo>Storm's End</nodeTo>
+                    <distance>498.6582</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1185,6 +1439,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Oldtown</nodeFrom>
                     <nodeTo>Highgarden</nodeTo>
+                    <distance>179.4018</distance>
                     <weight>1.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1192,6 +1447,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Oldtown</nodeFrom>
                     <nodeTo>Sunspear</nodeTo>
+                    <distance>702.1574</distance>
                     <weight>7.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1207,6 +1463,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Sunspear</nodeFrom>
                     <nodeTo>Highgarden</nodeTo>
+                    <distance>629.0072</distance>
                     <weight>7.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1214,6 +1471,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Sunspear</nodeFrom>
                     <nodeTo>Oldtown</nodeTo>
+                    <distance>702.1574</distance>
                     <weight>7.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1221,6 +1479,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Sunspear</nodeFrom>
                     <nodeTo>Lys</nodeTo>
+                    <distance>266.0677</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1228,6 +1487,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Sunspear</nodeFrom>
                     <nodeTo>Tarth</nodeTo>
+                    <distance>229.0015</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1235,6 +1495,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Sunspear</nodeFrom>
                     <nodeTo>Storm's End</nodeTo>
+                    <distance>333.0015</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1247,28 +1508,8 @@
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
-                    <nodeTo>Lorath</nodeTo>
-                    <weight>2.0</weight>
-                    <safety>2.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Braavos</nodeFrom>
-                    <nodeTo>Norvos</nodeTo>
-                    <weight>5.0</weight>
-                    <safety>3.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Braavos</nodeFrom>
-                    <nodeTo>Pentos</nodeTo>
-                    <weight>4.0</weight>
-                    <safety>3.0</safety>
-                </nodeEdge>
-                
-                <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Braavos</nodeFrom>
                     <nodeTo>Gulltown</nodeTo>
+                    <distance>298.8355</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1276,13 +1517,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
                     <nodeTo>Grey Cliffs</nodeTo>
-                    <weight>2.0</weight>
-                    <safety>1.0</safety>
+                    <distance>594.3373</distance>
+                    <weight>9.0</weight>
+                    <safety>5.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
                     <nodeTo>White Harbor</nodeTo>
+                    <distance>563.9592</distance>
                     <weight>10.0</weight>
                     <safety>5.0</safety>
                 </nodeEdge>
@@ -1290,6 +1533,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                     <distance>443.6958</distance>
                     <weight>10.0</weight>
                     <safety>5.0</safety>
                 </nodeEdge>
@@ -1297,6 +1541,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
                     <nodeTo>Tarth</nodeTo>
+                    <distance>645.8638</distance>
                     <weight>8.0</weight>
                     <safety>5.0</safety>
                 </nodeEdge>
@@ -1304,9 +1549,35 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Braavos</nodeFrom>
                     <nodeTo>Ghoyan Drohe</nodeTo>
+                    <distance>429.6627</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Lorath</nodeTo>
+                    <distance>205.6818</distance>
+                    <weight>2.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Norvos</nodeTo>
+                    <distance>394.6568</distance>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Braavos</nodeFrom>
+                    <nodeTo>Pentos</nodeTo>
+                    <distance>434.1394</distance>
+                    <weight>4.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
+                
             </nodeEdges>
             <xCoord>1450</xCoord>
             <yCoord>1258</yCoord>
@@ -1317,6 +1588,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lorath</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>205.6818</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1324,6 +1596,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lorath</nodeFrom>
                     <nodeTo>Norvos</nodeTo>
+                    <distance>244.4688</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1331,6 +1604,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lorath</nodeFrom>
                     <nodeTo>Ghoyan Drohe</nodeTo>
+                    <distance>354.5434</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1345,6 +1619,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>394.6568</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1352,6 +1627,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
                     <nodeTo>Lorath</nodeTo>
+                    <distance>244.4688</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1359,6 +1635,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
                     <nodeTo>Ghoyan Drohe</nodeTo>
+                    <distance>171.1724</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1366,6 +1643,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
                     <nodeTo>Pentos</nodeTo>
+                    <distance>301.405</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1373,6 +1651,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
                     <nodeTo>Qohor</nodeTo>
+                    <distance>286.2324</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1380,6 +1659,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Norvos</nodeFrom>
                     <nodeTo>Ny Sar</nodeTo>
+                    <distance>198.3381</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1391,8 +1671,17 @@
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Pentos">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>PentosTarth</nodeFrom>
+                    <nodeTo>Tarth</nodeTo>
+                    <distance>81.5843</distance>
+                    <weight>6.0</weight>
+                    <safety>4.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pentos</nodeFrom>
                     <nodeTo>Ghoyan Drohe</nodeTo>
+                    <distance>141.439</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1400,12 +1689,15 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pentos</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                    <distance>434.1394</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
+                
                  <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pentos</nodeFrom>
                     <nodeTo>Norvos</nodeTo>
+                     <distance>301.405</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1413,6 +1705,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pentos</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                    <distance>303.3496</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1420,10 +1713,18 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Pentos</nodeFrom>
                     <nodeTo>King's Landing</nodeTo>
+                    <distance>482.2655</distance>
                     <weight>8.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
                 
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>PentosNy Sar</nodeFrom>
+                    <nodeTo>Ny Sar</nodeTo>
+                    <distance>289.0138</distance>
+                    <weight>5.0</weight>
+                    <safety>3.0</safety>
+                </nodeEdge>
              
             </nodeEdges>
             <xCoord>1461</xCoord>
@@ -1435,36 +1736,47 @@
                  <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Braavos</nodeTo>
+                     <distance>429.6627</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Norvos</nodeTo>
+                    <distance>171.1724</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Pentos</nodeTo>
+                    <distance>141.439</distance>
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Ny Sar</nodeTo>
+                    <distance>166.8832</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Lorath</nodeTo>
+                    <distance>354.5434</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Myr</nodeTo>
+                    <distance>299.8666</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1472,6 +1784,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ghoyan Drohe</nodeFrom>
                     <nodeTo>Qohor</nodeTo>
+                    <distance>370.2175</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1485,6 +1798,7 @@
               <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ny Sar</nodeFrom>
                     <nodeTo>Ghoyan Drohe</nodeTo>
+                  <distance>166.8832</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1492,6 +1806,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ny Sar</nodeFrom>
                     <nodeTo>Qohor</nodeTo>
+                    <distance>227.3434</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1499,6 +1814,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ny Sar</nodeFrom>
                     <nodeTo>The Sorrows</nodeTo>
+                    <distance>203.973</distance>
                     <weight>3.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
@@ -1506,6 +1822,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ny Sar</nodeFrom>
                     <nodeTo>Myr</nodeTo>
+                    <distance>291.743</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1513,6 +1830,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ny Sar</nodeFrom>
                     <nodeTo>Pentos</nodeTo>
+                    <distance>289.0138</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1520,6 +1838,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Ny Sar</nodeFrom>
                     <nodeTo>Norvos</nodeTo>
+                    <distance>198.3381</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1531,15 +1850,17 @@
           <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Qohor">
             <nodeEdges>
                  <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeFrom>Qohor</nodeFrom>
                     <nodeTo>Norvos</nodeTo>
+                     <distance>286.2324</distance>
                     <weight>5.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>Ny Sar</nodeFrom>
+                    <nodeFrom>Qohor</nodeFrom>
                     <nodeTo>Ghoyan Drohe</nodeTo>
+                    <distance>370.2175</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1547,6 +1868,7 @@
                   <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Qohor</nodeFrom>
                     <nodeTo>Ny Sar</nodeTo>
+                    <distance>227.3434</distance>
                     <weight>4.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1554,6 +1876,7 @@
                   <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Qohor</nodeFrom>
                     <nodeTo>The Sorrows</nodeTo>
+                      <distance>301.5593</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1567,6 +1890,7 @@
                   <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Sorrows</nodeFrom>
                     <nodeTo>Qohor</nodeTo>
+                    <distance>301.5593</distance>
                     <weight>5.0</weight>
                     <safety>2.0</safety>
                   </nodeEdge>
@@ -1574,12 +1898,15 @@
                   <nodeEdge xsi:type="mapPath">
                     <nodeFrom>The Sorrows</nodeFrom>
                     <nodeTo>Ny Sar</nodeTo>
+                      <distance>203.973</distance>
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
-                    <nodeFrom>The Sorrwos</nodeFrom>
+                    <nodeFrom>The Sorrows</nodeFrom>
                     <nodeTo>Myr</nodeTo>
+                    <distance>244.7386</distance>
                     <weight>1.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1593,6 +1920,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Myr</nodeFrom>
                     <nodeTo>The Sorrows</nodeTo>
+                    <distance>244.7386</distance>
                     <weight>1.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
@@ -1600,6 +1928,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Myr</nodeFrom>
                     <nodeTo>Dragonstone</nodeTo>
+                    <distance>519.3419</distance>
                     <weight>6.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1607,6 +1936,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Myr</nodeFrom>
                     <nodeTo>Tarth</nodeTo>
+                    <distance>359.4802</distance>
                     <weight>3.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1614,13 +1944,31 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Myr</nodeFrom>
                     <nodeTo>Storm's End</nodeTo>
+                    <distance>433.4167</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Myr</nodeFrom>
+                    <nodeTo>Ghoyan Drohe</nodeTo>
+                    <distance>299.8666</distance>
+                    <weight>3.0</weight>
+                    <safety>2.0</safety>
+                </nodeEdge>
+                
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Myr</nodeFrom>
+                    <nodeTo>Ny Sar</nodeTo>
+                    <distance>291.743</distance>
+                    <weight>4.0</weight>
+                    <safety>2.0</safety>
                 </nodeEdge>
                 
                  <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Myr</nodeFrom>
                     <nodeTo>Lys</nodeTo>
+                     <distance>256.164</distance>
                     <weight>4.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
@@ -1634,6 +1982,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lys</nodeFrom>
                     <nodeTo>Sunspear</nodeTo>
+                    <distance>266.0677</distance>
                     <weight>4.0</weight>
                     <safety>3.0</safety>
                 </nodeEdge>
@@ -1641,6 +1990,7 @@
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Lys</nodeFrom>
                     <nodeTo>Myr</nodeTo>
+                    <distance>256.164</distance>
                     <weight>4.0</weight>
                     <safety>4.0</safety>
                 </nodeEdge>
