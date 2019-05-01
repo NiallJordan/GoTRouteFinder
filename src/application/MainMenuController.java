@@ -22,6 +22,7 @@ import graph.Node;
 import graphanalysis.DijkstraGraphAnalyzer;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -48,10 +49,10 @@ public class MainMenuController {
 	public static double imageHeight;
 	public static double imageWidth;
 	public static ImageView mapImageViewStatic;
-	public static String source;
-	public static String target;
-	public static String avoid;
-	public static String waypoint;
+	public static MapPoint source;
+	public static MapPoint target;
+	public static MapPoint avoid;
+	public static MapPoint waypoint;
 	public static String typeOfRoute;
 	public final String loadPath = "resources/GoTGraph.xml";
 
@@ -68,7 +69,7 @@ public class MainMenuController {
 	@FXML
 	Button findRoutesButton;
 	@FXML
-	ChoiceBox<String> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox;
+	ChoiceBox<MapPoint> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox;
 	@FXML
 	ChoiceBox<String> typeOfRouteChoiceBox;
 	@FXML
@@ -100,11 +101,15 @@ public class MainMenuController {
 		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
 		MapPoint mapPoint = null;
 
+
+		
 		for (MapPoint point : mapGraph.getNodes()) {
-			originChoiceBox.getItems().addAll(point.getName());
-			destinationChoiceBox.getItems().addAll(point.getName());
-			waypointChoiceBox.getItems().addAll(point.getName());
-			avoidChoiceBox.getItems().addAll(point.getName());
+//			ObservableList<MapPoint> pointList = FXCollections.observableArrayList();
+			originChoiceBox.setValue(point);
+			originChoiceBox.setValue(point);
+			destinationChoiceBox.setValue(point);
+			waypointChoiceBox.setValue(point);
+			avoidChoiceBox.setValue(point);
 		}
 		typeOfRouteChoiceBox.getItems().addAll("Safest", "Fastest", "Easiest");
 		SoundFactory.playSound();
@@ -118,12 +123,15 @@ public class MainMenuController {
 		waypoint = waypointChoiceBox.getValue();
 		avoid = avoidChoiceBox.getValue();
 		typeOfRoute = typeOfRouteChoiceBox.getValue();
+//		calculateRoutes(source,target);
 
 	}
 
-	public <N extends Node<N,E>, E extends Edge<N,E> void calculateRoutes() {
-		graphanalysis.GraphAnalyzer<Node<N,E>, Edge<N,E>> graphAnalysis;
-	}
+//	public <N extends Node<N,E>, E extends Edge<N,E>> List<N> calculateRoutes(N from, N to) {
+//		 DijkstraGraphAnalyzer<Node<N,E>, Edge<N,E>> graphAnalyzer;
+//		System.out.println();
+//
+//	}
 
 	@FXML
 	public void stopMusic(ActionEvent e) {
