@@ -65,7 +65,7 @@
       								<Font size="18.0" fx:id="x1" />
       							</font>
       						</Label>
-      						<Button fx:id="findRoutesButton" layoutX="126.0" layoutY="528.0" mnemonicParsing="false" text="Find Routes" />
+      						<Button fx:id="findRoutesButton" layoutX="126.0" layoutY="528.0" mnemonicParsing="false" onAction="#findRoutes" text="Find Routes" />
       						<ChoiceBox fx:id="originChoiceBox" layoutX="69.0" layoutY="37.0" prefWidth="150.0" />
       						<ChoiceBox fx:id="destinationChoiceBox" layoutX="69.0" layoutY="113.0" prefWidth="150.0" />
       						<Text fill="#f2730c" layoutX="37.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:">

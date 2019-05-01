@@ -10,6 +10,7 @@
                     <weight>3.0</weight>
                     <safety>2.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Castle Black</nodeFrom>
                     <nodeTo>Winterfell</nodeTo>
@@ -17,6 +18,7 @@
                     <weight>2.0</weight>
                     <safety>1.0</safety>
                 </nodeEdge>
+                
                 <nodeEdge xsi:type="mapPath">
                     <nodeFrom>Castle Black</nodeFrom>
                     <nodeTo>Bear Island</nodeTo>
@@ -25,12 +27,12 @@
                     <safety>4.0</safety>
                 </nodeEdge>
                 
-                 <nodeEdge xsi:type="mapPath">
-                <nodeFrom>Castle Black</nodeFrom>
-                <nodeTo>Grey Cliffs</nodeTo>
-                <distance>288.5134</distance>     
-                <weight>2.0</weight>
-                <safety>1.0</safety>
+                <nodeEdge xsi:type="mapPath">
+                    <nodeFrom>Castle Black</nodeFrom>
+                    <nodeTo>Grey Cliffs</nodeTo>
+                    <distance>288.5134</distance>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
             </nodeEdges>
             <xCoord>962</xCoord>
@@ -148,19 +150,19 @@
         <graphNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="mapPoint" name="Grey Cliffs">
             <nodeEdges>
                 <nodeEdge xsi:type="mapPath">
-                <nodeFrom>Grey Cliffs</nodeFrom>
-                <nodeTo>Castle Black</nodeTo>
-                <distance>288.5134</distance>     
-                <weight>2.0</weight>
-                <safety>1.0</safety>
+                    <nodeFrom>Grey Cliffs</nodeFrom>
+                    <nodeTo>Castle Black</nodeTo>
+                    <distance>288.5134</distance>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">
-                <nodeFrom>Grey Cliffs</nodeFrom>
-                <nodeTo>Dreadfort</nodeTo>
-                <distance>154.3049</distance>
-                <weight>2.0</weight>
-                <safety>1.0</safety>
+                    <nodeFrom>Grey Cliffs</nodeFrom>
+                    <nodeTo>Dreadfort</nodeTo>
+                    <distance>154.3049</distance>
+                    <weight>2.0</weight>
+                    <safety>1.0</safety>
                 </nodeEdge>
                 
                 <nodeEdge xsi:type="mapPath">

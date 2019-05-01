@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 import javax.swing.JLabel;
@@ -14,6 +15,11 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
 
+import com.sun.javafx.scene.paint.GradientUtils.Point;
+
+import graph.Edge;
+import graph.Node;
+import graphanalysis.DijkstraGraphAnalyzer;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.embed.swing.SwingFXUtils;
@@ -42,6 +48,11 @@ public class MainMenuController {
 	public static double imageHeight;
 	public static double imageWidth;
 	public static ImageView mapImageViewStatic;
+	public static String source;
+	public static String target;
+	public static String avoid;
+	public static String waypoint;
+	public static String typeOfRoute;
 	public final String loadPath = "resources/GoTGraph.xml";
 
 	@FXML
@@ -57,9 +68,9 @@ public class MainMenuController {
 	@FXML
 	Button findRoutesButton;
 	@FXML
-	ChoiceBox<String> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox; 
+	ChoiceBox<String> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox;
 	@FXML
-	ChoiceBox<String>typeOfRouteChoiceBox;
+	ChoiceBox<String> typeOfRouteChoiceBox;
 	@FXML
 	AnchorPane mapImageAnchorPane;
 
@@ -86,16 +97,32 @@ public class MainMenuController {
 		mapImageView.setFitHeight(imageHeight);
 		mapImageAnchorPane.setMinSize(imageWidth, imageHeight);
 		mapImageView.setImage(mapImage);
-//		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
-//		MapPoint mapPoint = null;
-//
-//		originChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
-//		destinationChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
-//		waypointChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
-//		avoidChoiceBox.setItems(FXCollections.observableArrayList(mapPoint.toString()));
+		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
+		MapPoint mapPoint = null;
 
+		for (MapPoint point : mapGraph.getNodes()) {
+			originChoiceBox.getItems().addAll(point.getName());
+			destinationChoiceBox.getItems().addAll(point.getName());
+			waypointChoiceBox.getItems().addAll(point.getName());
+			avoidChoiceBox.getItems().addAll(point.getName());
+		}
+		typeOfRouteChoiceBox.getItems().addAll("Safest", "Fastest", "Easiest");
 		SoundFactory.playSound();
 
+	}
+
+	@FXML
+	public void findRoutes(ActionEvent e) {
+		source = originChoiceBox.getValue();
+		target = destinationChoiceBox.getValue();
+		waypoint = waypointChoiceBox.getValue();
+		avoid = avoidChoiceBox.getValue();
+		typeOfRoute = typeOfRouteChoiceBox.getValue();
+
+	}
+
+	public <N extends Node<N,E>, E extends Edge<N,E> void calculateRoutes() {
+		graphanalysis.GraphAnalyzer<Node<N,E>, Edge<N,E>> graphAnalysis;
 	}
 
 	@FXML
@@ -121,7 +148,8 @@ public class MainMenuController {
 	@FXML
 	public void showAboutMenu(ActionEvent e) {
 		System.out.println("Showing authorship");
-		JLabel label= new JLabel("<html><center>This Project has been created for <br> Data And Algorithms 2 Continous Assessment by: <br> Hubert Stefanski, Niall Jordan and Oliver Baverstock");
+		JLabel label = new JLabel(
+				"<html><center>This Project has been created for <br> Data And Algorithms 2 Continous Assessment by: <br> Hubert Stefanski, Niall Jordan and Oliver Baverstock");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		JOptionPane.showMessageDialog(null, label, "ABOUT", JOptionPane.ERROR_MESSAGE);
 		System.out.println("Authorship shown");
