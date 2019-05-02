@@ -22,6 +22,7 @@ import javax.xml.bind.JAXBException;
 import graph.Edge;
 import graph.Node;
 import graphanalysis.DijkstraGraphAnalyzer;
+import graphanalysis.GraphAnalyzer;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -53,7 +54,7 @@ public class MainMenuController {
 	public static double imageWidth;
 	public static ImageView mapImageViewStatic;
 	public static MapPoint source;
-	public MapPoint target;
+	public static MapPoint target;
 	public static MapPoint avoid;
 	public static MapPoint waypoint;
 	public String typeOfRoute;
@@ -155,10 +156,11 @@ public class MainMenuController {
 		}
 
 		typeOfRoute = typeOfRouteChoiceBox.getValue();
-		calculateRoutes(source, target);
+
 	}
 
-	public <N> void calculateRoutes(MapPoint from, MapPoint to) {
+	public <N> List<N> shortestPathBetween(N from, N to) {
+		DijkstraGraphAnalyzer.shortestPathBetween(N,N) = shortestPathBetween(from, to);
 
 		System.out.println("Source : \n" + to + " Target : \n" + from);
 
@@ -216,13 +218,5 @@ public class MainMenuController {
 		MainMenuController.imageWidth = imageWidth;
 	}
 
-//		public MapPoint fromString(String stringToRead) throws IOException, ClassNotFoundException {
-//		byte[] byteArrayFromString = stringToRead.getBytes();
-//		ByteArrayInputStream bais = new ByteArrayInputStream(byteArrayFromString);
-//		ObjectInputStream ois = new ObjectInputStream(bais);
-//		Object outputObject = ois.readObject();
-//		System.out.println(outputObject);
-//		return (MapPoint) outputObject;
-//	}
 
 }
