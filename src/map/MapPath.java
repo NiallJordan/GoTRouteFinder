@@ -14,15 +14,15 @@ public class MapPath extends AbstractEdge<MapPoint, MapPath> implements Edge<Map
 
 	@Override
 	public String toString() {
-		return "MapPath [weight()=" + weight() + ", from()=" + from() + ", getFrom()=" + getFrom() + ", getTo()="
-				+ getTo() + ", to()=" + to() + "]";
+		return "MapPath [from()=" + from() + ", getFrom()=" + getFrom() + ", getTo()="
+				+ getTo() + ", to()=" + to() + ", weight()=" + weight() + ", safety()="+ safety() + ", distance()=" +distance() + "]";
 	}
 
 	public MapPath() {
 		super();
 	}
 
-	public MapPath(MapPoint from, MapPoint to, double weight) {
-		super(from, to, weight);
+	public MapPath(MapPoint from, MapPoint to, double weight, double safety, double distance) {
+		super(from, to, weight, safety, distance);
 	}
 }

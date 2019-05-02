@@ -4,12 +4,8 @@ package application;
 import javafx.scene.control.Button;
 
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.List;
 
@@ -19,13 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
 
-import graph.Edge;
-import graph.Node;
-import graphanalysis.DijkstraGraphAnalyzer;
-import graphanalysis.GraphAnalyzer;
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -36,8 +26,8 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.StringConverter;
 import map.MapGraph;
+import map.MapPath;
 import map.MapPoint;
 import xmlhandle.JAXBMarshalling;
 
@@ -156,14 +146,46 @@ public class MainMenuController {
 		}
 
 		typeOfRoute = typeOfRouteChoiceBox.getValue();
+		shortestPathBetween(source, target);
 
 	}
 
-	public <N> List<N> shortestPathBetween(N from, N to) {
-		DijkstraGraphAnalyzer.shortestPathBetween(N,N) = shortestPathBetween(from, to);
+	public List<MapPoint> shortestPathBetween(MapPoint from, MapPoint to) {
 
-		System.out.println("Source : \n" + to + " Target : \n" + from);
+		List<MapPoint> routeCalculated = shortestPathBetween(from, to);
 
+		System.out.println("Source : \n" + from + " Target : \n" + to);
+
+		return routeCalculated;
+
+	}
+
+	public void avoidThisNode(ActionEvent e) throws JAXBException {
+		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
+
+		for (MapPoint point : mapGraph.getNodes()) {
+			for (MapPath path : point.getEdges()) {
+				if (!(avoidChoiceBox.getValue() == null)) {
+					path.setWeight(Double.MAX_VALUE);
+					path.setSafety(Double.MAX_VALUE);
+					path.setDistance(Double.MAX_VALUE);
+				}
+			}
+		}
+	}
+
+	public void waypointThisNode(ActionEvent e) throws JAXBException {
+		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
+		for (MapPoint point : mapGraph.getNodes()) {
+			for (MapPath path : point.getEdges()) {
+
+				if (!(waypointChoiceBox.getValue() == null)) {
+					path.setWeight(Double.MIN_VALUE);
+					path.setSafety(Double.MIN_VALUE);
+					path.setDistance(Double.MIN_VALUE);
+				}
+			}
+		}
 	}
 
 	@FXML
@@ -217,6 +239,5 @@ public class MainMenuController {
 	public static void setImageWidth(double imageWidth) {
 		MainMenuController.imageWidth = imageWidth;
 	}
-
 
 }

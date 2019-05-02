@@ -17,6 +17,10 @@ public class MapPoint extends AbstractNode<MapPoint, MapPath> implements Node<Ma
 	public MapPoint() {
 		super();
 	}
+	
+	public MapPoint(final String name) {
+		super(name);
+	}
 
 	public MapPoint(final String name, final int xCoord, final int yCoord) {
 		super(name);
@@ -32,18 +36,18 @@ public class MapPoint extends AbstractNode<MapPoint, MapPath> implements Node<Ma
 		return yCoord;
 	}
 
-	public void addUnidirectionalPath(final MapPoint to, final double distance) {
-		this.getEdges().add(new MapPath(this, to, distance));
+	public void addUnidirectionalPath(final MapPoint to, final double weight, final double safety, final double distance) {
+		this.getEdges().add(new MapPath(this, to, weight, safety, distance));
 	}
 
-	public void addBidirectionalPath(final MapPoint to, final double distance) {
-		addUnidirectionalPath(to, distance);
-		to.addUnidirectionalPath(this, distance);
+	public void addBidirectionalPath(final MapPoint to,final double weight,final double safety, final double distance) {
+		addUnidirectionalPath(to, weight, safety, distance);
+		to.addUnidirectionalPath(this, weight, safety, distance);
 	}
 
 	@Override
 	public String toString() {
-		return " \n MapPoint [ Name=" + super.getName() + " xCoord=" + xCoord + ", yCoord=" + yCoord + "]";
+		return " \n MapPoint [xCoord=" + xCoord + ", yCoord=" + yCoord + "]";
 	}
 
 }

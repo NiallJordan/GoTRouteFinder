@@ -62,6 +62,7 @@ public class DijkstraGraphAnalyzer<N extends Node<N, E>, E extends Edge<N, E>> i
 			path.add(n);
 		}
 		Collections.reverse(path);
+		System.out.println(path);
 		return path;
 	}
 
