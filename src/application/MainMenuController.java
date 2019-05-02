@@ -122,27 +122,35 @@ public class MainMenuController {
 
 		for (MapPoint point : mapGraph.getNodes()) {
 			String sourceString = originChoiceBox.getValue();
-			if (sourceString.equals(point.getName())) {
-				source = point;
+			while (originChoiceBox.getValue() != null) {
+				if (sourceString.equals(point.getName())) {
+					source = point;
+				}
 			}
 		}
 		for (MapPoint point : mapGraph.getNodes()) {
 			String destinationString = destinationChoiceBox.getValue();
-			if (destinationString.equals(point.getName())) {
-				target = point;
+			while (destinationChoiceBox.getValue() != null) {
+				if (destinationString.equals(point.getName())) {
+					target = point;
+				}
 			}
 		}
 
 		for (MapPoint point : mapGraph.getNodes()) {
 			String waypointString = waypointChoiceBox.getValue();
-			if (waypointString.equals(point.getName())) {
-				waypoint = point;
+			while (waypointChoiceBox.getValue() != null) {
+				if (waypointString.equals(point.getName())) {
+					waypoint = point;
+				}
 			}
 		}
 		for (MapPoint point : mapGraph.getNodes()) {
 			String avoidString = avoidChoiceBox.getValue();
-			if (avoidString.equals(point.getName())) {
-				avoid = point;
+			while (avoidChoiceBox.getValue() != null) {
+				if (avoidString.equals(point.getName())) {
+					avoid = point;
+				}
 			}
 		}
 
@@ -152,7 +160,7 @@ public class MainMenuController {
 
 	public <N> void calculateRoutes(MapPoint from, MapPoint to) {
 
-		System.out.println("target : " + to + " source : " + from);
+		System.out.println("Source : \n" + to + " Target : \n" + from);
 
 	}
 
