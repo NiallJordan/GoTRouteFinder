@@ -4,8 +4,12 @@ package application;
 import javafx.scene.control.Button;
 
 import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.List;
 
@@ -14,8 +18,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
-
-import com.sun.javafx.scene.paint.GradientUtils.Point;
 
 import graph.Edge;
 import graph.Node;
@@ -33,6 +35,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.util.StringConverter;
 import map.MapGraph;
 import map.MapPoint;
 import xmlhandle.JAXBMarshalling;
@@ -50,10 +53,10 @@ public class MainMenuController {
 	public static double imageWidth;
 	public static ImageView mapImageViewStatic;
 	public static MapPoint source;
-	public static MapPoint target;
+	public MapPoint target;
 	public static MapPoint avoid;
 	public static MapPoint waypoint;
-	public static String typeOfRoute;
+	public String typeOfRoute;
 	public final String loadPath = "resources/GoTGraph.xml";
 
 	@FXML
@@ -69,7 +72,7 @@ public class MainMenuController {
 	@FXML
 	Button findRoutesButton;
 	@FXML
-	ChoiceBox<MapPoint> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox;
+	ChoiceBox<String> originChoiceBox, destinationChoiceBox, waypointChoiceBox, avoidChoiceBox;
 	@FXML
 	ChoiceBox<String> typeOfRouteChoiceBox;
 	@FXML
@@ -98,18 +101,15 @@ public class MainMenuController {
 		mapImageView.setFitHeight(imageHeight);
 		mapImageAnchorPane.setMinSize(imageWidth, imageHeight);
 		mapImageView.setImage(mapImage);
+
 		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
-		MapPoint mapPoint = null;
 
-
-		
 		for (MapPoint point : mapGraph.getNodes()) {
-//			ObservableList<MapPoint> pointList = FXCollections.observableArrayList();
-			originChoiceBox.setValue(point);
-			originChoiceBox.setValue(point);
-			destinationChoiceBox.setValue(point);
-			waypointChoiceBox.setValue(point);
-			avoidChoiceBox.setValue(point);
+
+			originChoiceBox.getItems().addAll(point.getName());
+			destinationChoiceBox.getItems().addAll(point.getName());
+			waypointChoiceBox.getItems().addAll(point.getName());
+			avoidChoiceBox.getItems().addAll(point.getName());
 		}
 		typeOfRouteChoiceBox.getItems().addAll("Safest", "Fastest", "Easiest");
 		SoundFactory.playSound();
@@ -117,21 +117,44 @@ public class MainMenuController {
 	}
 
 	@FXML
-	public void findRoutes(ActionEvent e) {
-		source = originChoiceBox.getValue();
-		target = destinationChoiceBox.getValue();
-		waypoint = waypointChoiceBox.getValue();
-		avoid = avoidChoiceBox.getValue();
-		typeOfRoute = typeOfRouteChoiceBox.getValue();
-//		calculateRoutes(source,target);
+	public void findRoutes(ActionEvent e) throws JAXBException {
+		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
 
+		for (MapPoint point : mapGraph.getNodes()) {
+			String sourceString = originChoiceBox.getValue();
+			if (sourceString.equals(point.getName())) {
+				source = point;
+			}
+		}
+		for (MapPoint point : mapGraph.getNodes()) {
+			String destinationString = destinationChoiceBox.getValue();
+			if (destinationString.equals(point.getName())) {
+				target = point;
+			}
+		}
+
+		for (MapPoint point : mapGraph.getNodes()) {
+			String waypointString = waypointChoiceBox.getValue();
+			if (waypointString.equals(point.getName())) {
+				waypoint = point;
+			}
+		}
+		for (MapPoint point : mapGraph.getNodes()) {
+			String avoidString = avoidChoiceBox.getValue();
+			if (avoidString.equals(point.getName())) {
+				avoid = point;
+			}
+		}
+
+		typeOfRoute = typeOfRouteChoiceBox.getValue();
+		calculateRoutes(source, target);
 	}
 
-//	public <N extends Node<N,E>, E extends Edge<N,E>> List<N> calculateRoutes(N from, N to) {
-//		 DijkstraGraphAnalyzer<Node<N,E>, Edge<N,E>> graphAnalyzer;
-//		System.out.println();
-//
-//	}
+	public <N> void calculateRoutes(MapPoint from, MapPoint to) {
+
+		System.out.println("target : " + to + " source : " + from);
+
+	}
 
 	@FXML
 	public void stopMusic(ActionEvent e) {
@@ -184,5 +207,14 @@ public class MainMenuController {
 	public static void setImageWidth(double imageWidth) {
 		MainMenuController.imageWidth = imageWidth;
 	}
+
+//		public MapPoint fromString(String stringToRead) throws IOException, ClassNotFoundException {
+//		byte[] byteArrayFromString = stringToRead.getBytes();
+//		ByteArrayInputStream bais = new ByteArrayInputStream(byteArrayFromString);
+//		ObjectInputStream ois = new ObjectInputStream(bais);
+//		Object outputObject = ois.readObject();
+//		System.out.println(outputObject);
+//		return (MapPoint) outputObject;
+//	}
 
 }

@@ -43,7 +43,7 @@ public class MapPoint extends AbstractNode<MapPoint, MapPath> implements Node<Ma
 
 	@Override
 	public String toString() {
-		return " \n MapPoint [xCoord=" + xCoord + ", yCoord=" + yCoord + "]";
+		return " \n MapPoint [ Name=" + super.getName() + " xCoord=" + xCoord + ", yCoord=" + yCoord + "]";
 	}
 
 }
