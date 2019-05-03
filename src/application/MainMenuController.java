@@ -15,6 +15,9 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
 
+import graph.Edge;
+import graph.Node;
+import graphanalysis.DijkstraGraphAnalyzer;
 import javafx.application.Platform;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
@@ -112,51 +115,44 @@ public class MainMenuController {
 		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
 
 		for (MapPoint point : mapGraph.getNodes()) {
-			String sourceString = originChoiceBox.getValue();
-			while (originChoiceBox.getValue() != null) {
-				if (sourceString.equals(point.getName())) {
+			if (originChoiceBox.getValue() != null) {
+				String sourceString = originChoiceBox.getValue();
+				if (sourceString == (point.getName().toString())) {
 					source = point;
 				}
 			}
 		}
+
 		for (MapPoint point : mapGraph.getNodes()) {
-			String destinationString = destinationChoiceBox.getValue();
-			while (destinationChoiceBox.getValue() != null) {
-				if (destinationString.equals(point.getName())) {
+			if (destinationChoiceBox.getValue() != null) {
+				String destinationString = destinationChoiceBox.getValue();
+				if (destinationString == (point.getName().toString())) {
 					target = point;
 				}
 			}
 		}
 
 		for (MapPoint point : mapGraph.getNodes()) {
-			String waypointString = waypointChoiceBox.getValue();
-			while (waypointChoiceBox.getValue() != null) {
-				if (waypointString.equals(point.getName())) {
+			if (waypointChoiceBox.getValue() != null) {
+				String waypointString = waypointChoiceBox.getValue();
+				if (waypointString == (point.getName().toString())) {
 					waypoint = point;
 				}
 			}
 		}
+
 		for (MapPoint point : mapGraph.getNodes()) {
-			String avoidString = avoidChoiceBox.getValue();
-			while (avoidChoiceBox.getValue() != null) {
-				if (avoidString.equals(point.getName())) {
+			if (avoidChoiceBox.getValue() != null) {
+				String avoidString = avoidChoiceBox.getValue();
+				if (avoidString == (point.getName().toString())) {
 					avoid = point;
 				}
 			}
 		}
-
-		typeOfRoute = typeOfRouteChoiceBox.getValue();
-		shortestPathBetween(source, target);
-
-	}
-
-	public List<MapPoint> shortestPathBetween(MapPoint from, MapPoint to) {
-
-		List<MapPoint> routeCalculated = shortestPathBetween(from, to);
-
-		System.out.println("Source : \n" + from + " Target : \n" + to);
-
-		return routeCalculated;
+		if (typeOfRouteChoiceBox.getValue() != null) {
+			typeOfRoute = typeOfRouteChoiceBox.getValue();
+		}
+		new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source, target);
 
 	}
 

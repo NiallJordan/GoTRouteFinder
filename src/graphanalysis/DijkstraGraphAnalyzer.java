@@ -43,7 +43,7 @@ public class DijkstraGraphAnalyzer<N extends Node<N, E>, E extends Edge<N, E>> i
 		while (unsettled.size() != 0) {
 			final N currentNode = getLowestDistanceNode(unsettled, nodeDistanceMapping);
 			final double currentDistance = nodeDistanceMapping.get(currentNode);
-			unsettled.remove(currentNode);
+			settled.add(currentNode);
 
 			for (final E e : currentNode.getEdges()) {
 				final double currentNeighorDistance = nodeDistanceMapping.get(e.to());
@@ -54,7 +54,8 @@ public class DijkstraGraphAnalyzer<N extends Node<N, E>, E extends Edge<N, E>> i
 					unsettled.add(e.to());
 				}
 			}
-			settled.add(currentNode);
+
+			unsettled.remove(currentNode);
 		}
 
 		final List<N> path = new ArrayList<N>();
@@ -62,7 +63,6 @@ public class DijkstraGraphAnalyzer<N extends Node<N, E>, E extends Edge<N, E>> i
 			path.add(n);
 		}
 		Collections.reverse(path);
-		System.out.println(path);
 		return path;
 	}
 
