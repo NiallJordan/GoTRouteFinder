@@ -51,6 +51,7 @@ public class MainMenuController {
 	public static MapPoint avoid;
 	public static MapPoint waypoint;
 	public String typeOfRoute;
+	public static List<MapPoint> route;
 	public final String loadPath = "resources/GoTGraph.xml";
 
 	@FXML
@@ -58,7 +59,7 @@ public class MainMenuController {
 	@FXML
 	Menu settingsMenu, systemMenu;
 	@FXML
-	MenuItem refreshMenuItem, exitMenuItem, aboutMenuItem, stopMusicMenuItem, overlayGraphMenuItem;
+	MenuItem refreshMenuItem, exitMenuItem, aboutMenuItem, stopMusicMenuItem, overlayGraphMenuItem, showRouteMenuItem;
 	@FXML
 	ImageView backgroundImageView;
 	@FXML
@@ -117,7 +118,7 @@ public class MainMenuController {
 		for (MapPoint point : mapGraph.getNodes()) {
 			if (originChoiceBox.getValue() != null) {
 				String sourceString = originChoiceBox.getValue();
-				if (sourceString == (point.getName().toString())) {
+				if (sourceString.equals((point.getName().toString()))) {
 					source = point;
 				}
 			}
@@ -126,7 +127,7 @@ public class MainMenuController {
 		for (MapPoint point : mapGraph.getNodes()) {
 			if (destinationChoiceBox.getValue() != null) {
 				String destinationString = destinationChoiceBox.getValue();
-				if (destinationString == (point.getName().toString())) {
+				if (destinationString.equals((point.getName().toString()))) {
 					target = point;
 				}
 			}
@@ -135,7 +136,7 @@ public class MainMenuController {
 		for (MapPoint point : mapGraph.getNodes()) {
 			if (waypointChoiceBox.getValue() != null) {
 				String waypointString = waypointChoiceBox.getValue();
-				if (waypointString == (point.getName().toString())) {
+				if (waypointString.equals((point.getName().toString()))) {
 					waypoint = point;
 				}
 			}
@@ -144,7 +145,7 @@ public class MainMenuController {
 		for (MapPoint point : mapGraph.getNodes()) {
 			if (avoidChoiceBox.getValue() != null) {
 				String avoidString = avoidChoiceBox.getValue();
-				if (avoidString == (point.getName().toString())) {
+				if (avoidString.equals((point.getName().toString()))) {
 					avoid = point;
 				}
 			}
@@ -152,8 +153,8 @@ public class MainMenuController {
 		if (typeOfRouteChoiceBox.getValue() != null) {
 			typeOfRoute = typeOfRouteChoiceBox.getValue();
 		}
-		new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source, target);
-
+		route = new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source, target);
+		System.out.println(route);
 	}
 
 	public void avoidThisNode(ActionEvent e) throws JAXBException {
@@ -182,6 +183,15 @@ public class MainMenuController {
 				}
 			}
 		}
+	}
+
+	@FXML
+	public void overlayRoute(ActionEvent e) {
+		BufferedImage bufferedMapImageToOverlay = SwingFXUtils.fromFXImage(mapImage, null);
+		GraphOverlayFactory.drawGraphRouteImage(bufferedMapImageToOverlay);
+		Image overLayedImage = SwingFXUtils.toFXImage(bufferedMapImageToOverlay, null);
+		mapImageView.setImage(overLayedImage);
+
 	}
 
 	@FXML
@@ -234,6 +244,14 @@ public class MainMenuController {
 
 	public static void setImageWidth(double imageWidth) {
 		MainMenuController.imageWidth = imageWidth;
+	}
+
+	public List<MapPoint> getRoute() {
+		return route;
+	}
+
+	public void setRoute(List<MapPoint> route) {
+		this.route = route;
 	}
 
 }
