@@ -39,7 +39,6 @@
                         <KeyCodeCombination alt="UP" code="M" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                      </accelerator></MenuItem>
                   <MenuItem fx:id="overlayGraphMenuItem" mnemonicParsing="false" onAction="#overlayGraph" text="Overlay Graph" />
-                  <MenuItem fx:id="showRouteMenuItem" mnemonicParsing="false" onAction="#overlayRoute" text="Show Route" />
 					</items>
 				</Menu>
 			</menus>

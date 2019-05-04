@@ -15,8 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
 
-import graph.Edge;
-import graph.Node;
 import graphanalysis.DijkstraGraphAnalyzer;
 import javafx.application.Platform;
 import javafx.embed.swing.SwingFXUtils;
@@ -138,6 +136,7 @@ public class MainMenuController {
 				String waypointString = waypointChoiceBox.getValue();
 				if (waypointString.equals((point.getName().toString()))) {
 					waypoint = point;
+					waypointThisNode();
 				}
 			}
 		}
@@ -147,6 +146,7 @@ public class MainMenuController {
 				String avoidString = avoidChoiceBox.getValue();
 				if (avoidString.equals((point.getName().toString()))) {
 					avoid = point;
+					avoidThisNode();
 				}
 			}
 		}
@@ -155,38 +155,32 @@ public class MainMenuController {
 		}
 		route = new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source, target);
 		System.out.println(route);
+		overlayRoute();
 	}
 
-	public void avoidThisNode(ActionEvent e) throws JAXBException {
-		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
+	public void avoidThisNode() {
+		if (avoidChoiceBox.getValue() != null) {
 
-		for (MapPoint point : mapGraph.getNodes()) {
-			for (MapPath path : point.getEdges()) {
-				if (!(avoidChoiceBox.getValue() == null)) {
-					path.setWeight(Double.MAX_VALUE);
-					path.setSafety(Double.MAX_VALUE);
-					path.setDistance(Double.MAX_VALUE);
-				}
+			for (MapPath path : avoid.getEdges()) {
+				path.setWeight(Double.MAX_VALUE);
+				path.setSafety(Double.MAX_VALUE);
+				path.setDistance(Double.MAX_VALUE);
 			}
 		}
 	}
 
-	public void waypointThisNode(ActionEvent e) throws JAXBException {
-		MapGraph mapGraph = JAXBMarshalling.loadMapGraph(loadPath);
-		for (MapPoint point : mapGraph.getNodes()) {
-			for (MapPath path : point.getEdges()) {
+	public void waypointThisNode() {
+		if (waypointChoiceBox.getValue() != null) {
 
-				if (!(waypointChoiceBox.getValue() == null)) {
-					path.setWeight(Double.MIN_VALUE);
-					path.setSafety(Double.MIN_VALUE);
-					path.setDistance(Double.MIN_VALUE);
-				}
+			for (MapPath path : waypoint.getEdges()) {
+				path.setWeight(Double.MIN_VALUE);
+				path.setSafety(Double.MIN_VALUE);
+				path.setDistance(Double.MIN_VALUE);
 			}
 		}
 	}
 
-	@FXML
-	public void overlayRoute(ActionEvent e) {
+	public void overlayRoute() {
 		BufferedImage bufferedMapImageToOverlay = SwingFXUtils.fromFXImage(mapImage, null);
 		GraphOverlayFactory.drawGraphRouteImage(bufferedMapImageToOverlay);
 		Image overLayedImage = SwingFXUtils.toFXImage(bufferedMapImageToOverlay, null);
@@ -248,10 +242,6 @@ public class MainMenuController {
 
 	public List<MapPoint> getRoute() {
 		return route;
-	}
-
-	public void setRoute(List<MapPoint> route) {
-		this.route = route;
 	}
 
 }
