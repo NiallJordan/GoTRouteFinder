@@ -1,4 +1,3 @@
-
 package application;
 
 import javafx.scene.control.Button;
@@ -7,6 +6,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -15,6 +15,7 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.xml.bind.JAXBException;
 
+import graph.Node;
 import graphanalysis.DijkstraGraphAnalyzer;
 import javafx.application.Platform;
 import javafx.embed.swing.SwingFXUtils;
@@ -50,6 +51,8 @@ public class MainMenuController {
 	public static MapPoint waypoint;
 	public String typeOfRoute;
 	public static List<MapPoint> route;
+	public static List<MapPoint> routeToWaypoint;
+	public static List<MapPoint> routeFromWaypoint;
 	public final String loadPath = "resources/GoTGraph.xml";
 
 	@FXML
@@ -136,7 +139,6 @@ public class MainMenuController {
 				String waypointString = waypointChoiceBox.getValue();
 				if (waypointString.equals((point.getName().toString()))) {
 					waypoint = point;
-					waypointThisNode();
 				}
 			}
 		}
@@ -152,10 +154,57 @@ public class MainMenuController {
 		}
 		if (typeOfRouteChoiceBox.getValue() != null) {
 			typeOfRoute = typeOfRouteChoiceBox.getValue();
+			if (typeOfRouteChoiceBox.getValue().equals("Safest")) {
+				for (MapPoint point : mapGraph.getNodes()) {
+					for (MapPath path : point.getEdges()) {
+						path.setWeight(path.safety());
+					}
+				}
+
+			}
 		}
-		route = new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source, target);
+		if (typeOfRouteChoiceBox.getValue() != null) {
+			typeOfRoute = typeOfRouteChoiceBox.getValue();
+			if (typeOfRouteChoiceBox.getValue().equals("Easiest")) {
+				for (MapPoint point : mapGraph.getNodes()) {
+					for (MapPath path : point.getEdges()) {
+						path.setWeight(path.weight());
+					}
+				}
+
+			}
+		}
+		if (typeOfRouteChoiceBox.getValue() != null) {
+			typeOfRoute = typeOfRouteChoiceBox.getValue();
+			if (typeOfRouteChoiceBox.getValue().equals("Fastest")) {
+				for (MapPoint point : mapGraph.getNodes()) {
+					for (MapPath path : point.getEdges()) {
+						path.setWeight(path.distance());
+					}
+				}
+
+			}
+		}
+
+		if (waypointChoiceBox.getValue() != null) {
+			List<MapPoint> finalRoute;
+			System.out.println(source);
+			finalRoute = new ArrayList<MapPoint>();
+			routeToWaypoint = new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source,
+					waypoint);
+			routeFromWaypoint = new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(waypoint,
+					target);
+			finalRoute = new ArrayList<MapPoint>(routeToWaypoint);
+			finalRoute.addAll(routeFromWaypoint);
+			route = finalRoute;
+			overlayRoute();
+		} else {
+			route = new DijkstraGraphAnalyzer<MapPoint, MapPath>(mapGraph).shortestPathBetween(source, target);
+			overlayRoute();
+		}
+
 		System.out.println(route);
-		overlayRoute();
+
 	}
 
 	public void avoidThisNode() {
@@ -165,17 +214,6 @@ public class MainMenuController {
 				path.setWeight(Double.MAX_VALUE);
 				path.setSafety(Double.MAX_VALUE);
 				path.setDistance(Double.MAX_VALUE);
-			}
-		}
-	}
-
-	public void waypointThisNode() {
-		if (waypointChoiceBox.getValue() != null) {
-
-			for (MapPath path : waypoint.getEdges()) {
-				path.setWeight(Double.MIN_VALUE);
-				path.setSafety(Double.MIN_VALUE);
-				path.setDistance(Double.MIN_VALUE);
 			}
 		}
 	}
