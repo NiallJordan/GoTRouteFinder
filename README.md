@@ -1,14 +1,33 @@
 # GoTRouteFinder
-Route Finding application for Westeros and Essos
+Route Finding/Graph navigation application for the fictional map of Westeros and Essos from the Game Of Thrones Series.
+(This application can be easily modified to suit any Graph,
+provided with an adeqauate image for graphical feedback and appropriately structured XML file containing the Graph information)
 
 Group project by Hubert Stefański and Niall Jordan
 
-Key features to be implemented:
+Key features implemented:
+
+-GUI 
+
+-Dijsktra's route finding algorithm
+
 -Custom graph Data structure
--Single valid route between two nodes
--Multiple valid route permutations
--Shortest route
--Easiest route
--Graphical feedback(illustration of each route on the map)
--Waypoint support (Route from node A to Node Z Trough any node N)
--Avoiding node support(Route from node A to Node Z Avoiding any node B (Barred))
+
+-Multiple valid route permutations between any two nodes(Including avoidance and waypoints)
+
+-Shortest/Easiest/Safest route permutations
+
+-Graphical feedback(illustration of routes on the map)
+
+-Waypoint through any node
+
+-Avoiding any given node
+
+
+TODO:
+
+-Implement A* algorithm
+
+-Reimplement Waypoint to be more reliable when finding any routes
+
+-Rework Weighting system to reflect the state of the map more realistically
